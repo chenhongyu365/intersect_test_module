@@ -19,20 +19,13 @@
 
 | 步骤                                                   | 示意图                                                       |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
-| 1、打开CMAKE，设置源码文件夹和用于编译项目的项目文件夹 | ![image](https://github.com/user-attachments/assets/44fd3f03-51a6-417d-9bc0-cda3ff4f488f)
- |
-| 2.cmake配置项目                                        | ![image](https://github.com/user-attachments/assets/2fc24dbd-2803-4173-bdef-e7b204662a45)
- |
-| 3.单击后效果图                                         | ![image](https://github.com/user-attachments/assets/538957ea-06d2-4574-8724-ea8f8ad9b856)
- |
-| 4.生成项目                                             | ![image](https://github.com/user-attachments/assets/8d955d5e-0e59-4a81-aea8-62258210fc36)
- |
-| 5.项目生成效果图                                       | ![image](https://github.com/user-attachments/assets/5d301715-06a5-4418-91c1-7147f2b4487a)
- |
-| 6.打开项目开始编程                                     | ![image](https://github.com/user-attachments/assets/0402d210-39d9-48b8-8711-17898f7e8fd8)
- |
-| 7.线面示意图                                           | ![image](https://github.com/user-attachments/assets/5f2b3283-89e4-405d-9e27-9446d832c6da)
- |
+| 1、打开CMAKE，设置源码文件夹和用于编译项目的项目文件夹 | ![image](https://github.com/user-attachments/assets/44fd3f03-51a6-417d-9bc0-cda3ff4f488f) |
+| 2.cmake配置项目                                        | ![image](https://github.com/user-attachments/assets/2fc24dbd-2803-4173-bdef-e7b204662a45) |
+| 3.单击后效果图                                         | ![image](https://github.com/user-attachments/assets/538957ea-06d2-4574-8724-ea8f8ad9b856) |
+| 4.生成项目                                             | ![image](https://github.com/user-attachments/assets/8d955d5e-0e59-4a81-aea8-62258210fc36) |
+| 5.项目生成效果图                                       | ![image](https://github.com/user-attachments/assets/5d301715-06a5-4418-91c1-7147f2b4487a) |
+| 6.打开项目开始编程                                     | ![image](https://github.com/user-attachments/assets/0402d210-39d9-48b8-8711-17898f7e8fd8) |
+| 7.线面示意图                                           | ![image](https://github.com/user-attachments/assets/5f2b3283-89e4-405d-9e27-9446d832c6da) |
 
 
 
@@ -73,12 +66,8 @@
 
 | 步骤           | 示意图                                                       |
 | -------------- | ------------------------------------------------------------ |
-| 1.1设置启动项  | ![image](https://github.com/user-attachments/assets/41c5382d-35e9-458a-92ac-244ff36ca23d)
- |
-| 1.2设置启动项  | ![image](https://github.com/user-attachments/assets/c33a802d-d84d-430d-b7fc-71696cc2432d)
- |
-| 2执行测试      | ![image](https://github.com/user-attachments/assets/95129126-b130-4203-8c64-1e56824049b9)
- |
-| 3.查看测试结果 | ![image](https://github.com/user-attachments/assets/1f89452a-a20e-472a-852d-09e65917e45b)
- |
+| 1.1设置启动项  | ![image](https://github.com/user-attachments/assets/41c5382d-35e9-458a-92ac-244ff36ca23d) |
+| 1.2设置启动项  | ![image](https://github.com/user-attachments/assets/c33a802d-d84d-430d-b7fc-71696cc2432d) |
+| 2执行测试      | ![image](https://github.com/user-attachments/assets/95129126-b130-4203-8c64-1e56824049b9) |
+| 3.查看测试结果 | ![image](https://github.com/user-attachments/assets/1f89452a-a20e-472a-852d-09e65917e45b) |
 
