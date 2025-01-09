@@ -1,0 +1,19 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_MERGE_ERRMOD_INCLUDED
+#define SPAACISDS_MERGE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_merge_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_merge_errmod;
+
+#endif
+#define BAD_MERGE_VERTEX spaacisds_merge_errmod.message_code(0)
+
+#endif /* SPAACISDS_MERGE_ERRMOD_INCLUDED */

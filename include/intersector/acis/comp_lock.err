@@ -1,0 +1,19 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_COMP_LOCK_ERRMOD_INCLUDED
+#define SPAACISDS_COMP_LOCK_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_comp_lock_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_comp_lock_errmod;
+
+#endif
+#define UNAUTHORIZED_FUNCTIONALITY spaacisds_comp_lock_errmod.message_code(0)
+
+#endif /* SPAACISDS_COMP_LOCK_ERRMOD_INCLUDED */

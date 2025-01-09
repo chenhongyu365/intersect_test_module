@@ -1,0 +1,30 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_FACEPROP_ERRMOD_INCLUDED
+#define SPAACISDS_FACEPROP_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_faceprop_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_faceprop_errmod;
+
+#endif
+#define NO_AREA spaacisds_faceprop_errmod.message_code(0)
+#define TINY_AREA spaacisds_faceprop_errmod.message_code(1)
+#define NO_PRECISION spaacisds_faceprop_errmod.message_code(2)
+#define NEGATIVE_MOMENT spaacisds_faceprop_errmod.message_code(3)
+#define ZERO_MOMENT spaacisds_faceprop_errmod.message_code(4)
+#define UNDEF_FACE_GEOM spaacisds_faceprop_errmod.message_code(5)
+#define UNDEF_EDGE_GEOM spaacisds_faceprop_errmod.message_code(6)
+#define UNDEF_COEDGE_GEOM spaacisds_faceprop_errmod.message_code(7)
+#define UNKNOWN_GEOM spaacisds_faceprop_errmod.message_code(8)
+#define BAD_ISO_VERTEX spaacisds_faceprop_errmod.message_code(9)
+#define NON_ANALYTIC_INPUT spaacisds_faceprop_errmod.message_code(10)
+#define ZERO_LENGTH_EDGE_ENCOUNTERED spaacisds_faceprop_errmod.message_code(11)
+
+#endif /* SPAACISDS_FACEPROP_ERRMOD_INCLUDED */

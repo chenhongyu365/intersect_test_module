@@ -1,0 +1,19 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SEPLUMPS_ERRMOD_INCLUDED
+#define SPAACISDS_SEPLUMPS_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_seplumps_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_seplumps_errmod;
+
+#endif
+#define NO_OUTSIDE_SHELL spaacisds_seplumps_errmod.message_code(0)
+
+#endif /* SPAACISDS_SEPLUMPS_ERRMOD_INCLUDED */

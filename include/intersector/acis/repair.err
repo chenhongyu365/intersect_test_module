@@ -1,0 +1,20 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_REPAIR_ERRMOD_INCLUDED
+#define SPAACISDS_REPAIR_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_repair_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_repair_errmod;
+
+#endif
+#define SURFACE_INCORRIGIBLE spaacisds_repair_errmod.message_code(0)
+#define REPAIR_INTERNAL spaacisds_repair_errmod.message_code(1)
+
+#endif /* SPAACISDS_REPAIR_ERRMOD_INCLUDED */

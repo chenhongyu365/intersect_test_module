@@ -1,0 +1,29 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_WIRE_ERRMOD_INCLUDED
+#define SPAACISDS_WIRE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_wire_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_wire_errmod;
+
+#endif
+#define CHORD_NOT_PERP spaacisds_wire_errmod.message_code(0)
+#define ENDS_TOO_CLOSE spaacisds_wire_errmod.message_code(1)
+#define LESS_3_PTS spaacisds_wire_errmod.message_code(2)
+#define LOOP_BRIDGE spaacisds_wire_errmod.message_code(3)
+#define FONT_NOT_FOUND spaacisds_wire_errmod.message_code(4)
+#define INVALID_CHAR spaacisds_wire_errmod.message_code(5)
+#define UNSUPPORTED_OS spaacisds_wire_errmod.message_code(6)
+#define FONT_NOT_VALID spaacisds_wire_errmod.message_code(7)
+#define FONT_QUESTIONABLE spaacisds_wire_errmod.message_code(8)
+#define FONT_RIGHT_TO_LEFT spaacisds_wire_errmod.message_code(9)
+#define FONT_LAYOUT_RTL spaacisds_wire_errmod.message_code(10)
+
+#endif /* SPAACISDS_WIRE_ERRMOD_INCLUDED */

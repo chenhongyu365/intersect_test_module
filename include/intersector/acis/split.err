@@ -1,0 +1,23 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SPLIT_ERRMOD_INCLUDED
+#define SPAACISDS_SPLIT_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_split_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_split_errmod;
+
+#endif
+#define BAD_SPLIT_PARAM spaacisds_split_errmod.message_code(0)
+#define ILLEGAL_SPLIT_SURF spaacisds_split_errmod.message_code(1)
+#define NO_FACE_BODY spaacisds_split_errmod.message_code(2)
+#define NO_SPLITTING_SURF spaacisds_split_errmod.message_code(3)
+#define SLIVER_FACE spaacisds_split_errmod.message_code(4)
+
+#endif /* SPAACISDS_SPLIT_ERRMOD_INCLUDED */

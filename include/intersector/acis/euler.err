@@ -1,0 +1,25 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_EULER_ERRMOD_INCLUDED
+#define SPAACISDS_EULER_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_euler_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_euler_errmod;
+
+#endif
+#define COEDS_DIFF_FACE spaacisds_euler_errmod.message_code(0)
+#define FACE_DIFF_BODY spaacisds_euler_errmod.message_code(1)
+#define OWNER_NOT_BODY spaacisds_euler_errmod.message_code(2)
+#define OWNER_NOT_LOOP spaacisds_euler_errmod.message_code(3)
+#define SPUR_AT_BOTH_ENDS spaacisds_euler_errmod.message_code(4)
+#define TOO_MANY_LOOPS spaacisds_euler_errmod.message_code(5)
+#define EDGE_REMOVE_FAILED spaacisds_euler_errmod.message_code(6)
+
+#endif /* SPAACISDS_EULER_ERRMOD_INCLUDED */

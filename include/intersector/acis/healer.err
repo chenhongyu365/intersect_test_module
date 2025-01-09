@@ -1,0 +1,39 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_HEALER_ERRMOD_INCLUDED
+#define SPAACISDS_HEALER_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_healer_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_healer_errmod;
+
+#endif
+#define WIRE_BODY_NOT_SUPPORTED spaacisds_healer_errmod.message_code(0)
+#define MISMATCH_IN_OPTION spaacisds_healer_errmod.message_code(1)
+#define SIMPLIFIED_TEDGE_HAS_ERROR spaacisds_healer_errmod.message_code(2)
+#define MAX_RADIUS_TOO_BIG spaacisds_healer_errmod.message_code(3)
+#define MAX_RADIUS_TOO_SMALL spaacisds_healer_errmod.message_code(4)
+#define FACE_WITH_NO_BODY spaacisds_healer_errmod.message_code(5)
+#define COULD_NOT_SIMPLIFY_EDGE spaacisds_healer_errmod.message_code(6)
+#define DID_NOT_SIMPLIFY_EDGE spaacisds_healer_errmod.message_code(7)
+#define COULD_NOT_SIMPLIFY_FACE spaacisds_healer_errmod.message_code(8)
+#define DID_NOT_SIMPLIFY_FACE spaacisds_healer_errmod.message_code(9)
+#define INVALID_SIMPLIFY_ENTITY spaacisds_healer_errmod.message_code(10)
+#define INVALID_DESIRED_GAP_TIGHTNESS spaacisds_healer_errmod.message_code(11)
+#define COULD_NOT_TIGHTEN_GAP spaacisds_healer_errmod.message_code(12)
+#define ALREADY_GOOD_BUT_MODIFIED spaacisds_healer_errmod.message_code(13)
+#define NON_TRAVERSABLE_TOPOLOGY spaacisds_healer_errmod.message_code(14)
+#define OPEN_CURVE_TREATED_AS_CLOSED spaacisds_healer_errmod.message_code(15)
+#define ENCOUNTERED_UNEXPECTED_SITUATION spaacisds_healer_errmod.message_code(16)
+#define UNSUPPORTED_WIRE_REP spaacisds_healer_errmod.message_code(17)
+#define EXPECTED_ONE_BODY_TO_TIGHTEN spaacisds_healer_errmod.message_code(18)
+#define HEAL_WRONG_INPUT spaacisds_healer_errmod.message_code(19)
+#define HEAL_DIFF_OWNER_BODY spaacisds_healer_errmod.message_code(20)
+
+#endif /* SPAACISDS_HEALER_ERRMOD_INCLUDED */

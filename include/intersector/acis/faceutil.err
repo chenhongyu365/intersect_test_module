@@ -1,0 +1,19 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_FACEUTIL_ERRMOD_INCLUDED
+#define SPAACISDS_FACEUTIL_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_faceutil_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_faceutil_errmod;
+
+#endif
+#define BAD_FACE_UV_BOX_CACHE spaacisds_faceutil_errmod.message_code(0)
+
+#endif /* SPAACISDS_FACEUTIL_ERRMOD_INCLUDED */

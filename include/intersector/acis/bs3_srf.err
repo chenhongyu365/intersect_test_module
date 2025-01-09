@@ -1,0 +1,38 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_BS3_SRF_ERRMOD_INCLUDED
+#define SPAACISDS_BS3_SRF_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_bs3_srf_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_bs3_srf_errmod;
+
+#endif
+#define INCOMPATIBLE_CRV spaacisds_bs3_srf_errmod.message_code(0)
+#define NO_SURF_PERP spaacisds_bs3_srf_errmod.message_code(1)
+#define SPINE_NOT_FIT spaacisds_bs3_srf_errmod.message_code(2)
+#define SPINE_NOT_INTCURVE spaacisds_bs3_srf_errmod.message_code(3)
+#define SURF_OSC spaacisds_bs3_srf_errmod.message_code(4)
+#define SURF_POLE spaacisds_bs3_srf_errmod.message_code(5)
+#define SUR_UNKNOWN_BS_FORM spaacisds_bs3_srf_errmod.message_code(6)
+#define UNKNOWN_BS_SURFACE spaacisds_bs3_srf_errmod.message_code(7)
+#define UNKNOWN_BS_SING spaacisds_bs3_srf_errmod.message_code(8)
+#define NULL_SURFACE spaacisds_bs3_srf_errmod.message_code(9)
+#define NULL_BS3_SURF_EVAL spaacisds_bs3_srf_errmod.message_code(10)
+#define BAD_SPLINE_P_MULT spaacisds_bs3_srf_errmod.message_code(11)
+#define SUR_FIT_NO_KNOT_SPAN spaacisds_bs3_srf_errmod.message_code(12)
+#define BAD_V_KNOT_VECTOR spaacisds_bs3_srf_errmod.message_code(13)
+#define BAD_U_KNOT_VECTOR spaacisds_bs3_srf_errmod.message_code(14)
+#define BAD_PARAMETRIC_DIRECTION spaacisds_bs3_srf_errmod.message_code(15)
+#define BS3_SURF_EVAL_FAILED spaacisds_bs3_srf_errmod.message_code(16)
+#define STOPPED_SUBDIVIDING_QUADS spaacisds_bs3_srf_errmod.message_code(17)
+#define INTERNAL_FILLET_ERROR spaacisds_bs3_srf_errmod.message_code(18)
+#define BS3_SRF_SING_INTERP_DERIVS spaacisds_bs3_srf_errmod.message_code(19)
+
+#endif /* SPAACISDS_BS3_SRF_ERRMOD_INCLUDED */

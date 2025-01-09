@@ -1,0 +1,37 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_INTCUR_ERRMOD_INCLUDED
+#define SPAACISDS_INTCUR_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_intcur_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_intcur_errmod;
+
+#endif
+#define EXPLODING_STEP spaacisds_intcur_errmod.message_code(0)
+#define ITER_LIMIT_CUR spaacisds_intcur_errmod.message_code(1)
+#define OLD_FIT_CUR spaacisds_intcur_errmod.message_code(2)
+#define OLD_OFFSET_CUR spaacisds_intcur_errmod.message_code(3)
+#define OLD_PAR_CUR spaacisds_intcur_errmod.message_code(4)
+#define OLD_PAR2_CUR spaacisds_intcur_errmod.message_code(5)
+#define OLD_PROJ_CUR spaacisds_intcur_errmod.message_code(6)
+#define OLD_SURF_CUR spaacisds_intcur_errmod.message_code(7)
+#define OLD_SURF2_CUR spaacisds_intcur_errmod.message_code(8)
+#define UNIMPL_PCUR_CUR spaacisds_intcur_errmod.message_code(9)
+#define TANGENT_EVAL spaacisds_intcur_errmod.message_code(10)
+#define PARALLEL_SURF_DERIVS spaacisds_intcur_errmod.message_code(11)
+#define EXTENSION_TOO_BIG spaacisds_intcur_errmod.message_code(12)
+#define NULL_EXTENSION spaacisds_intcur_errmod.message_code(13)
+#define CLOSED_EXTENSION spaacisds_intcur_errmod.message_code(14)
+#define PCURVE_WITHOUT_SURF spaacisds_intcur_errmod.message_code(15)
+#define DISCONTINUOUS_CURVE spaacisds_intcur_errmod.message_code(16)
+#define DISC_CALC_FAILED spaacisds_intcur_errmod.message_code(17)
+#define ZERO_FIT_INTCURVE spaacisds_intcur_errmod.message_code(18)
+
+#endif /* SPAACISDS_INTCUR_ERRMOD_INCLUDED */

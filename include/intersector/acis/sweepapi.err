@@ -1,0 +1,79 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SWEEPAPI_ERRMOD_INCLUDED
+#define SPAACISDS_SWEEPAPI_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_sweepapi_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_sweepapi_errmod;
+
+#endif
+#define SWEEP_ADJACENT_FACE spaacisds_sweepapi_errmod.message_code(0)
+#define SWEEP_BRANCHEDWIRE_NONSUPPORTED_OPTION spaacisds_sweepapi_errmod.message_code(1)
+#define SWEEP_BRANCHED_WIRE_BAD_PATH spaacisds_sweepapi_errmod.message_code(2)
+#define SWEEP_CLOSE_NONPLANAR spaacisds_sweepapi_errmod.message_code(3)
+#define SWEEP_DISTANCE_NOT_FACE spaacisds_sweepapi_errmod.message_code(4)
+#define SWEEP_DRAFT_NONPLANAR spaacisds_sweepapi_errmod.message_code(5)
+#define SWEEP_DRAFT_NON_G1 spaacisds_sweepapi_errmod.message_code(6)
+#define SWEEP_ELL_PROF_OFF_CENTER spaacisds_sweepapi_errmod.message_code(7)
+#define SWEEP_FACE_NO_VEC spaacisds_sweepapi_errmod.message_code(8)
+#define SWEEP_HELIX_SELF_INT spaacisds_sweepapi_errmod.message_code(9)
+#define SWEEP_INVALID_RESULT spaacisds_sweepapi_errmod.message_code(10)
+#define SWEEP_INVALID_PATH spaacisds_sweepapi_errmod.message_code(11)
+#define SWEEP_LAW_SIZE_MISMATCH spaacisds_sweepapi_errmod.message_code(12)
+#define SWEEP_NEAR_TANGENT_PATH spaacisds_sweepapi_errmod.message_code(13)
+#define SWEEP_NONPLANAR_FACE spaacisds_sweepapi_errmod.message_code(14)
+#define SWEEP_OFFSET_FACE_FAILS spaacisds_sweepapi_errmod.message_code(15)
+#define SWEEP_OLD_MITERS spaacisds_sweepapi_errmod.message_code(16)
+#define SWEEP_OPEN_WIRE_TO_BODY spaacisds_sweepapi_errmod.message_code(17)
+#define SWEEP_PORTION_TO_BODY spaacisds_sweepapi_errmod.message_code(18)
+#define SWEEP_PORTION_UNKNOWN spaacisds_sweepapi_errmod.message_code(19)
+#define SWEEP_PATH_INVERTED spaacisds_sweepapi_errmod.message_code(20)
+#define SWEEP_PROFILE_NEAR_TANGENT spaacisds_sweepapi_errmod.message_code(21)
+#define SWEEP_PROFILE_NOT_ON_PATH spaacisds_sweepapi_errmod.message_code(22)
+#define SWEEP_PROF_DEGEN_AT_START spaacisds_sweepapi_errmod.message_code(23)
+#define SWEEP_SCALE_TO_ZERO spaacisds_sweepapi_errmod.message_code(24)
+#define SWEEP_SHEETBODY_WARNING spaacisds_sweepapi_errmod.message_code(25)
+#define SWEEP_WIRE_IN_SHEETBODY_DRAFT spaacisds_sweepapi_errmod.message_code(26)
+#define SWEEP_TO_FACE_OPTIONS spaacisds_sweepapi_errmod.message_code(27)
+#define SWEEP_TOL_EDGE_NO_MATCH spaacisds_sweepapi_errmod.message_code(28)
+#define SWEEP_UNDEFINED_DRAFT spaacisds_sweepapi_errmod.message_code(29)
+#define SWEEP_VECTOR_NOT_CONSTANT_LAW spaacisds_sweepapi_errmod.message_code(30)
+#define SWEEP_ZERO_VECTOR spaacisds_sweepapi_errmod.message_code(31)
+#define SWEEP_ZERO_LENGTH spaacisds_sweepapi_errmod.message_code(32)
+#define SWEEP_PROFILE_DISC_G1 spaacisds_sweepapi_errmod.message_code(33)
+#define SWEEP_NON_MANIFOLD_FACE spaacisds_sweepapi_errmod.message_code(34)
+#define SWEEP_PARTIAL_ONLY spaacisds_sweepapi_errmod.message_code(35)
+#define SWEEP_CLOSED_NON_PLANAR spaacisds_sweepapi_errmod.message_code(36)
+#define SWEEP_DRAFT_GAP_CHANGED spaacisds_sweepapi_errmod.message_code(37)
+#define SWEEP_NON_PLANAR_INVALID_PATH spaacisds_sweepapi_errmod.message_code(38)
+#define SWEEP_NEAR_TANGENT_DIRECTION spaacisds_sweepapi_errmod.message_code(39)
+#define SWEEP_DRAFT_TANGENT spaacisds_sweepapi_errmod.message_code(40)
+#define SWEEP_SELF_INT_BODY spaacisds_sweepapi_errmod.message_code(41)
+#define SWEEP_UV_PARALLEL spaacisds_sweepapi_errmod.message_code(42)
+#define SWEEP_TO_BODY_FAILED spaacisds_sweepapi_errmod.message_code(43)
+#define SWEEP_SHEET_TO_BODY spaacisds_sweepapi_errmod.message_code(44)
+#define SWEEP_PROFILE_SPLIT_AT_G1_DISC spaacisds_sweepapi_errmod.message_code(45)
+#define SWEEP_PATH_SPLIT_AT_G1_DISC spaacisds_sweepapi_errmod.message_code(46)
+#define SWEEP_DRAFT_GAP_FILL_CHANG spaacisds_sweepapi_errmod.message_code(47)
+#define SWEEP_RAIL_NON_G1_PATH spaacisds_sweepapi_errmod.message_code(48)
+#define SWEEP_INTERNAL_ERROR spaacisds_sweepapi_errmod.message_code(49)
+#define EXTRUDE_BAD_CURVE_TYPE spaacisds_sweepapi_errmod.message_code(50)
+#define EXTRUDE_BAD_DRAFT_ANGLE spaacisds_sweepapi_errmod.message_code(51)
+#define EXTRUDE_ELLIPSE_DRAFT spaacisds_sweepapi_errmod.message_code(52)
+#define EXTRUDE_NON_PLANE spaacisds_sweepapi_errmod.message_code(53)
+#define EXTRUDE_NON_TANGENT_EDGES spaacisds_sweepapi_errmod.message_code(54)
+#define EXTRUDE_SHEET_DRAFT spaacisds_sweepapi_errmod.message_code(55)
+#define EXTRUDE_SHEET_BAD_INPUT_COEDGE spaacisds_sweepapi_errmod.message_code(56)
+#define EXTRUDE_SHEET_EMPTY_SHELL spaacisds_sweepapi_errmod.message_code(57)
+#define EXTRUDE_SHEET_NON_UNIFORM_NORMAL spaacisds_sweepapi_errmod.message_code(58)
+#define SWEEP_AXIS_AND_RAILS spaacisds_sweepapi_errmod.message_code(59)
+#define SWEEP_NON_MANIFOLD_PATH spaacisds_sweepapi_errmod.message_code(60)
+
+#endif /* SPAACISDS_SWEEPAPI_ERRMOD_INCLUDED */

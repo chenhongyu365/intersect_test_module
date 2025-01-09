@@ -1,0 +1,74 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SWEEP_ERRMOD_INCLUDED
+#define SPAACISDS_SWEEP_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_sweep_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_sweep_errmod;
+
+#endif
+#define AXIS_N_PLANE spaacisds_sweep_errmod.message_code(0)
+#define AXIS_NOT_MADE spaacisds_sweep_errmod.message_code(1)
+#define CHAIN_BAD_ORDER spaacisds_sweep_errmod.message_code(2)
+#define CHAIN_BRANCHING spaacisds_sweep_errmod.message_code(3)
+#define CHAIN_NO_ENDS spaacisds_sweep_errmod.message_code(4)
+#define CHAIN_NO_OWNER spaacisds_sweep_errmod.message_code(5)
+#define CHAIN_PARALLEL_PATH spaacisds_sweep_errmod.message_code(6)
+#define CMPLX_PROF spaacisds_sweep_errmod.message_code(7)
+#define COMP_W_DRAFT spaacisds_sweep_errmod.message_code(8)
+#define COVER_FACE_NULL spaacisds_sweep_errmod.message_code(9)
+#define DIRTY_WIRE spaacisds_sweep_errmod.message_code(10)
+#define DR_ANGLE_OR spaacisds_sweep_errmod.message_code(11)
+#define DRAFT_ON_SMOOTH spaacisds_sweep_errmod.message_code(12)
+#define DRAFT_REPAIR spaacisds_sweep_errmod.message_code(13)
+#define ENDS_NOT_DSTNCT spaacisds_sweep_errmod.message_code(14)
+#define FACE_NOT_LAMINA spaacisds_sweep_errmod.message_code(15)
+#define LAT_CURVE_NULL spaacisds_sweep_errmod.message_code(16)
+#define LAT_SURF_INTER spaacisds_sweep_errmod.message_code(17)
+#define LAT_SURF_NULL spaacisds_sweep_errmod.message_code(18)
+#define MITRE_PLANE_ZERO spaacisds_sweep_errmod.message_code(19)
+#define MULTIPLE_WIRES spaacisds_sweep_errmod.message_code(20)
+#define NEG_VOLUME spaacisds_sweep_errmod.message_code(21)
+#define NO_PT_OFF_AXIS spaacisds_sweep_errmod.message_code(22)
+#define NO_X_LAT_TOSUR spaacisds_sweep_errmod.message_code(23)
+#define OPEN_FACE spaacisds_sweep_errmod.message_code(24)
+#define PATH_NOT_PLANAR spaacisds_sweep_errmod.message_code(25)
+#define PATH_OFF_PROF spaacisds_sweep_errmod.message_code(26)
+#define PATH_TANGENT spaacisds_sweep_errmod.message_code(27)
+#define PROF_NOT_MITRE spaacisds_sweep_errmod.message_code(28)
+#define PROF_NOT_PLANAR spaacisds_sweep_errmod.message_code(29)
+#define PROFILE_NOT_ON_PATH spaacisds_sweep_errmod.message_code(30)
+#define RAIL_CURVE_NULL spaacisds_sweep_errmod.message_code(31)
+#define REVOLVE_NON_CIRCLE spaacisds_sweep_errmod.message_code(32)
+#define RIGID_W_DRAFT spaacisds_sweep_errmod.message_code(33)
+#define SELF_INTER spaacisds_sweep_errmod.message_code(34)
+#define SMOOTH_W_DRAFT spaacisds_sweep_errmod.message_code(35)
+#define SW_ANGLE_OR spaacisds_sweep_errmod.message_code(36)
+#define SWEEP_DANGLING_WIRE spaacisds_sweep_errmod.message_code(37)
+#define SWEEP_DEG_MULT_LOOP spaacisds_sweep_errmod.message_code(38)
+#define SWEEP_SHEETBODY spaacisds_sweep_errmod.message_code(39)
+#define SWEEP_SHEETBODY_WIRE spaacisds_sweep_errmod.message_code(40)
+#define TO_CURVE_NULL spaacisds_sweep_errmod.message_code(41)
+#define TOP_BOT_INTER spaacisds_sweep_errmod.message_code(42)
+#define TWIST_NOT_PERP spaacisds_sweep_errmod.message_code(43)
+#define UNSMOOTH_DRAFT spaacisds_sweep_errmod.message_code(44)
+#define WIRE_X_AXIS spaacisds_sweep_errmod.message_code(45)
+#define SWEEP_NON_G0 spaacisds_sweep_errmod.message_code(46)
+#define SWEEP_NON_G1 spaacisds_sweep_errmod.message_code(47)
+#define SCALE_W_DRAFT spaacisds_sweep_errmod.message_code(48)
+#define RIGID_W_SCALE spaacisds_sweep_errmod.message_code(49)
+#define COMP_W_SCALE spaacisds_sweep_errmod.message_code(50)
+#define SCALE_W_ZERO spaacisds_sweep_errmod.message_code(51)
+#define SCALE_START_ERR spaacisds_sweep_errmod.message_code(52)
+#define SCALE_Z_ERR spaacisds_sweep_errmod.message_code(53)
+#define SCALE_XY_ERR spaacisds_sweep_errmod.message_code(54)
+#define SW_SCALE_OR spaacisds_sweep_errmod.message_code(55)
+
+#endif /* SPAACISDS_SWEEP_ERRMOD_INCLUDED */

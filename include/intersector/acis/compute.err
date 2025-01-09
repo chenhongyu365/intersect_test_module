@@ -1,0 +1,25 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_COMPUTE_ERRMOD_INCLUDED
+#define SPAACISDS_COMPUTE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_compute_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_compute_errmod;
+
+#endif
+#define COEDGE_NO_PARTNER spaacisds_compute_errmod.message_code(0)
+#define CT_CSHL_NO_CFACE1 spaacisds_compute_errmod.message_code(1)
+#define INCONSISTENT_CFACE_CONTAINMENTS spaacisds_compute_errmod.message_code(2)
+#define INVALID_CT_MODEL spaacisds_compute_errmod.message_code(3)
+#define MISSING_OWNER_IN_UPDATE spaacisds_compute_errmod.message_code(4)
+#define MISSING_CLOSED_CSHELLS spaacisds_compute_errmod.message_code(5)
+#define UNFINDABLE_ENCLOSE_FACES spaacisds_compute_errmod.message_code(6)
+
+#endif /* SPAACISDS_COMPUTE_ERRMOD_INCLUDED */

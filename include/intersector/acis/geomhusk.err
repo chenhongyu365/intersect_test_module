@@ -1,0 +1,67 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_GEOMHUSK_ERRMOD_INCLUDED
+#define SPAACISDS_GEOMHUSK_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_geomhusk_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_geomhusk_errmod;
+
+#endif
+#define ZERO_PLANE spaacisds_geomhusk_errmod.message_code(0)
+#define PLANE_NORMAL_ZERO spaacisds_geomhusk_errmod.message_code(1)
+#define NOT_A_CURVE spaacisds_geomhusk_errmod.message_code(2)
+#define NOT_A_LINE spaacisds_geomhusk_errmod.message_code(3)
+#define NOT_AN_ELLIPSE spaacisds_geomhusk_errmod.message_code(4)
+#define NOT_TOP_LEVEL spaacisds_geomhusk_errmod.message_code(5)
+#define NO_TRIM_ITEM spaacisds_geomhusk_errmod.message_code(6)
+#define NO_INTERSECTIONS spaacisds_geomhusk_errmod.message_code(7)
+#define NOT_VALID_ENTITY spaacisds_geomhusk_errmod.message_code(8)
+#define COLLINEAR_POINTS spaacisds_geomhusk_errmod.message_code(9)
+#define COINCIDENT_POINTS spaacisds_geomhusk_errmod.message_code(10)
+#define INSUFFICIENT_DATA spaacisds_geomhusk_errmod.message_code(11)
+#define NO_SOLUTION_FOUND spaacisds_geomhusk_errmod.message_code(12)
+#define NOT_SOLID_EDGE spaacisds_geomhusk_errmod.message_code(13)
+#define NOT_PLANAR spaacisds_geomhusk_errmod.message_code(14)
+#define BAD_TORUS_RADII spaacisds_geomhusk_errmod.message_code(15)
+#define NOT_ON_CURVE spaacisds_geomhusk_errmod.message_code(16)
+#define ZERO_LENGTH_EDGE spaacisds_geomhusk_errmod.message_code(17)
+#define ZERO_LENGTH_AXIS spaacisds_geomhusk_errmod.message_code(18)
+#define FACES_SWEPT_AS_SOL spaacisds_geomhusk_errmod.message_code(19)
+#define INSUFFICIENT_SPLGRID_DATA spaacisds_geomhusk_errmod.message_code(20)
+#define LOOP_PERI_WITH_SEP spaacisds_geomhusk_errmod.message_code(21)
+#define LOOP_HOLE_NOT_CONTAINED spaacisds_geomhusk_errmod.message_code(22)
+#define LOOP_EXTRA_PERI spaacisds_geomhusk_errmod.message_code(23)
+#define LOOP_TWO_PLUS_SEP spaacisds_geomhusk_errmod.message_code(24)
+#define LOOP_TORUS_ONE_SEP spaacisds_geomhusk_errmod.message_code(25)
+#define LOOP_BAD_SEP_CONTAIN spaacisds_geomhusk_errmod.message_code(26)
+#define LOOP_CONE_ONE_SEP spaacisds_geomhusk_errmod.message_code(27)
+#define LOOP_SPLINE_ONE_SEP spaacisds_geomhusk_errmod.message_code(28)
+#define LOOP_HOLE_IN_HOLE spaacisds_geomhusk_errmod.message_code(29)
+#define LOOP_NO_PERIPHERY spaacisds_geomhusk_errmod.message_code(30)
+#define LOOP_NOT_CLOSED spaacisds_geomhusk_errmod.message_code(31)
+#define LOOP_SEP_IN_SPLINE spaacisds_geomhusk_errmod.message_code(32)
+#define LOOP_DEGEN spaacisds_geomhusk_errmod.message_code(33)
+#define LOOP_FACE_UNBOUNDED spaacisds_geomhusk_errmod.message_code(34)
+#define LOOP_FACE_PARTIAL_BOUNDED spaacisds_geomhusk_errmod.message_code(35)
+#define LOOP_TORUS_DEGEN_NEAR_APEX spaacisds_geomhusk_errmod.message_code(36)
+#define LOOP_CONE_DEGEN_NEAR_APEX spaacisds_geomhusk_errmod.message_code(37)
+#define FACE_CLOSED_SURF_OPEN spaacisds_geomhusk_errmod.message_code(38)
+#define CALL_TO_BUY_WARP spaacisds_geomhusk_errmod.message_code(39)
+#define FUNCTIONALITY_NOT_AVAILABLE spaacisds_geomhusk_errmod.message_code(40)
+#define BAD_LOOP_TYPE_CACHE spaacisds_geomhusk_errmod.message_code(41)
+#define NOT_TRANSFORMATION_ENTITY spaacisds_geomhusk_errmod.message_code(42)
+#define FS_ENCOUNTERED_ERRORS spaacisds_geomhusk_errmod.message_code(43)
+#define QUINTIC_APPROX_FAILED spaacisds_geomhusk_errmod.message_code(44)
+#define SMALL_INTERVAL spaacisds_geomhusk_errmod.message_code(45)
+#define NOT_MANIFOLD spaacisds_geomhusk_errmod.message_code(46)
+#define PROJ_EVAL_FAILURE spaacisds_geomhusk_errmod.message_code(47)
+#define LOOP_SEP_NONPERIODIC spaacisds_geomhusk_errmod.message_code(48)
+
+#endif /* SPAACISDS_GEOMHUSK_ERRMOD_INCLUDED */

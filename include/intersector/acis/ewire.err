@@ -1,0 +1,24 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_EWIRE_ERRMOD_INCLUDED
+#define SPAACISDS_EWIRE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_ewire_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_ewire_errmod;
+
+#endif
+#define CLOSED_EDGE spaacisds_ewire_errmod.message_code(0)
+#define EWIRE_EMPTY_EDGE_LIST spaacisds_ewire_errmod.message_code(1)
+#define UNBOUNDED_EDGE spaacisds_ewire_errmod.message_code(2)
+#define EDGE_NOT_FREE spaacisds_ewire_errmod.message_code(3)
+#define WIRE_OVERLAPPING_VERT spaacisds_ewire_errmod.message_code(4)
+#define DISCONNECTED_WIRE spaacisds_ewire_errmod.message_code(5)
+
+#endif /* SPAACISDS_EWIRE_ERRMOD_INCLUDED */

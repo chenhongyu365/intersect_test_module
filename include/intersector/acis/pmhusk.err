@@ -1,0 +1,29 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_PMHUSK_ERRMOD_INCLUDED
+#define SPAACISDS_PMHUSK_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_pmhusk_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_pmhusk_errmod;
+
+#endif
+#define PM_HM_RESTORE_NOT_EMPTY spaacisds_pmhusk_errmod.message_code(0)
+#define PM_HM_RESTORE_UNDISTRIBUTED spaacisds_pmhusk_errmod.message_code(1)
+#define PM_HM_SAVE_UNDISTRIBUTED spaacisds_pmhusk_errmod.message_code(2)
+#define PM_HM_CANT_CHANGE_DISTRIBUTE_MODE spaacisds_pmhusk_errmod.message_code(3)
+#define PM_HM_HISTORY_CONFLICT spaacisds_pmhusk_errmod.message_code(4)
+#define PM_NO_PART_NAME spaacisds_pmhusk_errmod.message_code(5)
+#define PM_NO_STATE_TO_NAME spaacisds_pmhusk_errmod.message_code(6)
+#define PM_CANNOT_OPEN_FILE spaacisds_pmhusk_errmod.message_code(7)
+#define PM_UNBALANCED_STATES spaacisds_pmhusk_errmod.message_code(8)
+#define PM_NO_ACTIVE_PART spaacisds_pmhusk_errmod.message_code(9)
+#define PM_NO_SHARE_DIST_HIST spaacisds_pmhusk_errmod.message_code(10)
+
+#endif /* SPAACISDS_PMHUSK_ERRMOD_INCLUDED */

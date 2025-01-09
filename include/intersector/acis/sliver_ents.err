@@ -1,0 +1,22 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SLIVER_ENTS_ERRMOD_INCLUDED
+#define SPAACISDS_SLIVER_ENTS_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_sliver_ents_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_sliver_ents_errmod;
+
+#endif
+#define SLIVER_NOT_IMPLEMENTED spaacisds_sliver_ents_errmod.message_code(0)
+#define BODY_ALL_SLIVERS spaacisds_sliver_ents_errmod.message_code(1)
+#define SLIVER_REMOVAL_MAKES_NON_MANI spaacisds_sliver_ents_errmod.message_code(2)
+#define SLIVER_REMOVAL_MAKES_MULTI_SHELLS spaacisds_sliver_ents_errmod.message_code(3)
+
+#endif /* SPAACISDS_SLIVER_ENTS_ERRMOD_INCLUDED */

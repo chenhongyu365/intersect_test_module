@@ -1,0 +1,60 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_REM_ERRMOD_INCLUDED
+#define SPAACISDS_REM_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_rem_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_rem_errmod;
+
+#endif
+#define REM_NO_FACE spaacisds_rem_errmod.message_code(0)
+#define REM_BAD_FACE spaacisds_rem_errmod.message_code(1)
+#define REM_NO_EDGE spaacisds_rem_errmod.message_code(2)
+#define REM_BAD_EDGE spaacisds_rem_errmod.message_code(3)
+#define REM_NON_MANIFOLD spaacisds_rem_errmod.message_code(4)
+#define REM_FREE_EDGE spaacisds_rem_errmod.message_code(5)
+#define REM_NO_SOLUTION spaacisds_rem_errmod.message_code(6)
+#define REM_INTERNAL spaacisds_rem_errmod.message_code(7)
+#define REM_NOT_IMPLEMENTED spaacisds_rem_errmod.message_code(8)
+#define REM_NO_WIRE_BODY spaacisds_rem_errmod.message_code(9)
+#define REM_NO_EDGES spaacisds_rem_errmod.message_code(10)
+#define REM_LAST_SHELL spaacisds_rem_errmod.message_code(11)
+#define REM_TWO_LOOP spaacisds_rem_errmod.message_code(12)
+#define REM_BAD_BOX spaacisds_rem_errmod.message_code(13)
+#define REM_NOT_IMPLEMENTED_FOR_CELL spaacisds_rem_errmod.message_code(14)
+#define REM_INVALID_REMOVE spaacisds_rem_errmod.message_code(15)
+#define REM_REMOTE_FACE_INTR spaacisds_rem_errmod.message_code(16)
+#define REM_BL_PARTIAL spaacisds_rem_errmod.message_code(17)
+#define REM_BL_ON_BLEND spaacisds_rem_errmod.message_code(18)
+#define REM_BL_ON_NON_BLEND spaacisds_rem_errmod.message_code(19)
+#define REM_BL_HAS_INTER_FEATURE spaacisds_rem_errmod.message_code(20)
+#define REM_BL_TYPE_LIMITATION spaacisds_rem_errmod.message_code(21)
+#define REM_BL_DIFFERENT_RADII_IN_SEQ spaacisds_rem_errmod.message_code(22)
+#define REM_BL_SUPPORT_REMOVED spaacisds_rem_errmod.message_code(23)
+#define REM_BL_NO_SPRING_IDENTIFIED spaacisds_rem_errmod.message_code(24)
+#define REM_BL_NO_CROSS_IDENTIFIED spaacisds_rem_errmod.message_code(25)
+#define REM_BL_FACE_WITH_MULTIPLE_LOOPS spaacisds_rem_errmod.message_code(26)
+#define REM_BL_DIFF_CVTY_OR_RAD spaacisds_rem_errmod.message_code(27)
+#define REM_BL_CROSS_NOT_CIRCULAR spaacisds_rem_errmod.message_code(28)
+#define REM_BL_TOPOL_LIMITATION spaacisds_rem_errmod.message_code(29)
+#define REM_BL_EXTRA_COEDGES_FOR_VERT_BLEND spaacisds_rem_errmod.message_code(30)
+#define REM_G1_DISC_MOAT spaacisds_rem_errmod.message_code(31)
+#define REM_NO_MERGE_ATTRIB_EDGE spaacisds_rem_errmod.message_code(32)
+#define REM_MULTI_LATERAL_MOAT_PAIR spaacisds_rem_errmod.message_code(33)
+#define REM_RE_STRAYING_FROM_MOAT spaacisds_rem_errmod.message_code(34)
+#define REM_INADEQUATE_MOAT_EXTN spaacisds_rem_errmod.message_code(35)
+#define REM_FREE_VERT spaacisds_rem_errmod.message_code(36)
+#define REM_BL_KEEP_FEATURE spaacisds_rem_errmod.message_code(37)
+#define REM_EDGE_NO_SOLUTION spaacisds_rem_errmod.message_code(38)
+#define REM_BAD_SHEET_EDGE spaacisds_rem_errmod.message_code(39)
+#define REM_BAD_EDGE_NETWORK spaacisds_rem_errmod.message_code(40)
+#define REM_SHEET_BODY spaacisds_rem_errmod.message_code(41)
+
+#endif /* SPAACISDS_REM_ERRMOD_INCLUDED */
