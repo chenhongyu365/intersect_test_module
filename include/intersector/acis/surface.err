@@ -1,0 +1,38 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SURFACE_ERRMOD_INCLUDED
+#define SPAACISDS_SURFACE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_surface_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_surface_errmod;
+
+#endif
+#define BOUNDED_SURFACE_ERROR spaacisds_surface_errmod.message_code(0)
+#define OLD_SAVE_REV spaacisds_surface_errmod.message_code(1)
+#define SHEAR_SPHERE spaacisds_surface_errmod.message_code(2)
+#define SHEAR_TORUS spaacisds_surface_errmod.message_code(3)
+#define SINGULAR_PARAM spaacisds_surface_errmod.message_code(4)
+#define UNIMPLEMENTED_REPARAM spaacisds_surface_errmod.message_code(5)
+#define UNIMPLEMENTED_SURFACE spaacisds_surface_errmod.message_code(6)
+#define ZERO_PLANE_NORM spaacisds_surface_errmod.message_code(7)
+#define ZERO_TORUS_NORM spaacisds_surface_errmod.message_code(8)
+#define PLANE_U_DERIV_ERROR spaacisds_surface_errmod.message_code(9)
+#define CHANGE_PLANE_U_DERIV spaacisds_surface_errmod.message_code(10)
+#define CHANGE_TORUS_UV_ORIGIN spaacisds_surface_errmod.message_code(11)
+#define BAD_UPDATE spaacisds_surface_errmod.message_code(12)
+#define MAKE_APPROX_FAILED spaacisds_surface_errmod.message_code(13)
+#define EXACT_SUR_NO_BS3 spaacisds_surface_errmod.message_code(14)
+#define INTERNAL_SURFACE_FITTING_ERROR spaacisds_surface_errmod.message_code(15)
+#define SURFACE_FITTING_DEGREE_ERROR spaacisds_surface_errmod.message_code(16)
+#define SURFACE_FITTING_DOMAIN_ERROR spaacisds_surface_errmod.message_code(17)
+#define SINGULAR_PARAM_UNITVEC spaacisds_surface_errmod.message_code(18)
+#define SPHERE_TOO_LARGE spaacisds_surface_errmod.message_code(19)
+
+#endif /* SPAACISDS_SURFACE_ERRMOD_INCLUDED */

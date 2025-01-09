@@ -1,0 +1,36 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_FILEIO_ERRMOD_INCLUDED
+#define SPAACISDS_FILEIO_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_fileio_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_fileio_errmod;
+
+#endif
+#define BAD_BINARY_FORMAT spaacisds_fileio_errmod.message_code(0)
+#define ID_OVERFLOW spaacisds_fileio_errmod.message_code(1)
+#define INFINITE_INTERVAL spaacisds_fileio_errmod.message_code(2)
+#define RESTORE_EOF spaacisds_fileio_errmod.message_code(3)
+#define RESTORE_NO_LOGICAL spaacisds_fileio_errmod.message_code(4)
+#define RESTORE_NO_INT spaacisds_fileio_errmod.message_code(5)
+#define RESTORE_NO_REAL spaacisds_fileio_errmod.message_code(6)
+#define RESTORE_BAD_LONG spaacisds_fileio_errmod.message_code(7)
+#define SAVE_BAD_LONG spaacisds_fileio_errmod.message_code(8)
+#define ERROR_IN_FWRITE spaacisds_fileio_errmod.message_code(9)
+#define RESTORE_NO_ENUM spaacisds_fileio_errmod.message_code(10)
+#define SAVE_BAD_ENUM spaacisds_fileio_errmod.message_code(11)
+#define INDEXING_FAILED spaacisds_fileio_errmod.message_code(12)
+#define FIX_BAD_NAME spaacisds_fileio_errmod.message_code(13)
+#define MATCHED_PARTIAL_LOGICAL spaacisds_fileio_errmod.message_code(14)
+#define EOF_CHAR_0xFF_NOT_ALLOWED_IN_SAT spaacisds_fileio_errmod.message_code(15)
+#define EOF_CHAR_0x1A_NOT_ALLOWED_IN_SAT spaacisds_fileio_errmod.message_code(16)
+#define RESTORE_END_OF_RECORD spaacisds_fileio_errmod.message_code(17)
+
+#endif /* SPAACISDS_FILEIO_ERRMOD_INCLUDED */

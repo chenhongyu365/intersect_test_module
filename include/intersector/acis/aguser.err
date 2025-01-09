@@ -1,0 +1,31 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_AGUSER_ERRMOD_INCLUDED
+#define SPAACISDS_AGUSER_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_aguser_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_aguser_errmod;
+
+#endif
+#define AGERR_ALLOC spaacisds_aguser_errmod.message_code(0)
+#define AGERR_DATA spaacisds_aguser_errmod.message_code(1)
+#define AGERR_DEALLOC spaacisds_aguser_errmod.message_code(2)
+#define AGERR_FOPEN spaacisds_aguser_errmod.message_code(3)
+#define AGERR_INIT spaacisds_aguser_errmod.message_code(4)
+#define AGERR_ITER spaacisds_aguser_errmod.message_code(5)
+#define AGERR_MISSING spaacisds_aguser_errmod.message_code(6)
+#define AGERR_OVERFLOW spaacisds_aguser_errmod.message_code(7)
+#define AGERR_RANGE spaacisds_aguser_errmod.message_code(8)
+#define AGERR_READ spaacisds_aguser_errmod.message_code(9)
+#define AGERR_STRUCT spaacisds_aguser_errmod.message_code(10)
+#define AGERR_TRACE spaacisds_aguser_errmod.message_code(11)
+#define AGERR_UNKNOWN spaacisds_aguser_errmod.message_code(12)
+
+#endif /* SPAACISDS_AGUSER_ERRMOD_INCLUDED */

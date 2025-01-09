@@ -1,0 +1,23 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_PTINFACE_ERRMOD_INCLUDED
+#define SPAACISDS_PTINFACE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_ptinface_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_ptinface_errmod;
+
+#endif
+#define MISSING_PCURVE spaacisds_ptinface_errmod.message_code(0)
+#define NO_PCURVE_LEFT spaacisds_ptinface_errmod.message_code(1)
+#define UNKNOWN_SURFACE spaacisds_ptinface_errmod.message_code(2)
+#define RAYINFACE_NO_HIT spaacisds_ptinface_errmod.message_code(3)
+#define PIF_POS_OFF_SURF spaacisds_ptinface_errmod.message_code(4)
+
+#endif /* SPAACISDS_PTINFACE_ERRMOD_INCLUDED */

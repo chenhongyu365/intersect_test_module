@@ -1,0 +1,21 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SPLED_ERRMOD_INCLUDED
+#define SPAACISDS_SPLED_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_spled_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_spled_errmod;
+
+#endif
+#define VERTEX_NOT_ON_EDGE spaacisds_spled_errmod.message_code(0)
+#define VERTEX_ON_EDGE_END spaacisds_spled_errmod.message_code(1)
+#define TEDGE_NOT_VALID spaacisds_spled_errmod.message_code(2)
+
+#endif /* SPAACISDS_SPLED_ERRMOD_INCLUDED */

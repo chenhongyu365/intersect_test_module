@@ -1,0 +1,47 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SGAPI_ERRMOD_INCLUDED
+#define SPAACISDS_SGAPI_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_sgapi_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_sgapi_errmod;
+
+#endif
+#define FACE_SELF_INTER spaacisds_sgapi_errmod.message_code(0)
+#define FACE_IRREGULAR spaacisds_sgapi_errmod.message_code(1)
+#define SURF_BAD_CLOSURE spaacisds_sgapi_errmod.message_code(2)
+#define BS3_SURF_NULL spaacisds_sgapi_errmod.message_code(3)
+#define BS3_COI_VERTS spaacisds_sgapi_errmod.message_code(4)
+#define BAD_DEGENERACIES spaacisds_sgapi_errmod.message_code(5)
+#define UNTREAT_SING spaacisds_sgapi_errmod.message_code(6)
+#define SURF_NON_G0 spaacisds_sgapi_errmod.message_code(7)
+#define SURF_NON_G1 spaacisds_sgapi_errmod.message_code(8)
+#define SURF_NON_G2 spaacisds_sgapi_errmod.message_code(9)
+#define SURF_NON_C1 spaacisds_sgapi_errmod.message_code(10)
+#define NON_UNIQUE_CTRLPTS spaacisds_sgapi_errmod.message_code(11)
+#define NON_UNIQUE_FITPTS spaacisds_sgapi_errmod.message_code(12)
+#define BS3_CURVE_NULL spaacisds_sgapi_errmod.message_code(13)
+#define CURVE_SELF_INTER spaacisds_sgapi_errmod.message_code(14)
+#define CURVE_IRREGULAR spaacisds_sgapi_errmod.message_code(15)
+#define CURVE_BAD_CLOSURE spaacisds_sgapi_errmod.message_code(16)
+#define CURVE_NON_G0 spaacisds_sgapi_errmod.message_code(17)
+#define CURVE_NON_G1 spaacisds_sgapi_errmod.message_code(18)
+#define CURVE_NON_G2 spaacisds_sgapi_errmod.message_code(19)
+#define CURVE_NON_C1 spaacisds_sgapi_errmod.message_code(20)
+#define DEGENERATE_EDGE spaacisds_sgapi_errmod.message_code(21)
+#define DEGENERATE_FACE spaacisds_sgapi_errmod.message_code(22)
+#define INVALID_SINGULARITIES spaacisds_sgapi_errmod.message_code(23)
+#define TEDGE_REPAIR_FAILED spaacisds_sgapi_errmod.message_code(24)
+#define CANNOT_APPROX_COEDGE spaacisds_sgapi_errmod.message_code(25)
+#define MINIMUM_LEN_CRITERIA_FAILED spaacisds_sgapi_errmod.message_code(26)
+#define ANGLE_TOL_CRITERIA_FAILED spaacisds_sgapi_errmod.message_code(27)
+#define MIN_ARC_ANGLE_CRITERIA_FAILED spaacisds_sgapi_errmod.message_code(28)
+
+#endif /* SPAACISDS_SGAPI_ERRMOD_INCLUDED */

@@ -1,0 +1,22 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_ENTITIES_ERRMOD_INCLUDED
+#define SPAACISDS_ENTITIES_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_entities_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_entities_errmod;
+
+#endif
+#define UNKNOWN_COLOR_MATERIAL spaacisds_entities_errmod.message_code(0)
+#define UNKNOWN_REFLECTANCE_MATERIAL spaacisds_entities_errmod.message_code(1)
+#define UNKNOWN_DISPLACEMENT_MATERIAL spaacisds_entities_errmod.message_code(2)
+#define UNKNOWN_TRANSPARENCY_MATERIAL spaacisds_entities_errmod.message_code(3)
+
+#endif /* SPAACISDS_ENTITIES_ERRMOD_INCLUDED */

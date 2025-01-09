@@ -1,0 +1,24 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_VECTOR_ERRMOD_INCLUDED
+#define SPAACISDS_VECTOR_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_vector_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_vector_errmod;
+
+#endif
+#define SHEAR_INVERSE spaacisds_vector_errmod.message_code(0)
+#define SHEAR_UNIT spaacisds_vector_errmod.message_code(1)
+#define MATRIX_SINGULAR spaacisds_vector_errmod.message_code(2)
+#define BAD_BOX_OPERATION spaacisds_vector_errmod.message_code(3)
+#define BAD_SCALE_FACTOR spaacisds_vector_errmod.message_code(4)
+#define BAD_TRANSF_FLAGS spaacisds_vector_errmod.message_code(5)
+
+#endif /* SPAACISDS_VECTOR_ERRMOD_INCLUDED */

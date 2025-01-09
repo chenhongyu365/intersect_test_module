@@ -1,0 +1,31 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_NET_ERRMOD_INCLUDED
+#define SPAACISDS_NET_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_net_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_net_errmod;
+
+#endif
+#define SKIN_BAD_UV_VALUE_NET spaacisds_net_errmod.message_code(0)
+#define V_WIRE_MULTI_COEDGE spaacisds_net_errmod.message_code(1)
+#define U_WIRE_MULTI_COEDGE spaacisds_net_errmod.message_code(2)
+#define CRVS_DO_NOT_INT spaacisds_net_errmod.message_code(3)
+#define V_WIRE_DEGENERATE spaacisds_net_errmod.message_code(4)
+#define U_WIRE_DEGENERATE spaacisds_net_errmod.message_code(5)
+#define CRVS_INT_CROSS spaacisds_net_errmod.message_code(6)
+#define BAD_UV_NET_DIR spaacisds_net_errmod.message_code(7)
+#define BAD_SPLINE_APPROX spaacisds_net_errmod.message_code(8)
+#define BAD_KNOT_ORDER spaacisds_net_errmod.message_code(9)
+#define NET_SELF_INTERSECTION spaacisds_net_errmod.message_code(10)
+#define KNOTS_DECREASE spaacisds_net_errmod.message_code(11)
+#define NET_BAD_MAPPING_CURVE spaacisds_net_errmod.message_code(12)
+
+#endif /* SPAACISDS_NET_ERRMOD_INCLUDED */

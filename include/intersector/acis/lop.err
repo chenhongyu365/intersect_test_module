@@ -1,0 +1,93 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_LOP_ERRMOD_INCLUDED
+#define SPAACISDS_LOP_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_lop_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_lop_errmod;
+
+#endif
+#define LOP_TWK_NO_FACE spaacisds_lop_errmod.message_code(0)
+#define LOP_TWK_BAD_FACE spaacisds_lop_errmod.message_code(1)
+#define LOP_TWK_BAD_SURFACE spaacisds_lop_errmod.message_code(2)
+#define LOP_TWK_NON_MANIFOLD spaacisds_lop_errmod.message_code(3)
+#define LOP_TWK_FREE_EDGE spaacisds_lop_errmod.message_code(4)
+#define LOP_TWK_MULTIPLE_EDGE spaacisds_lop_errmod.message_code(5)
+#define LOP_TWK_MULTIPLE_VERT spaacisds_lop_errmod.message_code(6)
+#define LOP_TWK_NO_EDGE spaacisds_lop_errmod.message_code(7)
+#define LOP_TWK_NO_VERT spaacisds_lop_errmod.message_code(8)
+#define LOP_TWK_ZERO_LEN_EDGE spaacisds_lop_errmod.message_code(9)
+#define LOP_TWK_INTERNAL spaacisds_lop_errmod.message_code(10)
+#define LOP_TWK_BAD_OP_ON_ATT spaacisds_lop_errmod.message_code(11)
+#define LOP_TWK_TOPOL_CHANGE spaacisds_lop_errmod.message_code(12)
+#define LOP_TWK_NO_BLEND_EDIT_SF spaacisds_lop_errmod.message_code(13)
+#define LOP_TWK_STACK_LIMIT spaacisds_lop_errmod.message_code(14)
+#define LOP_TWK_COMPUTE_FAILED spaacisds_lop_errmod.message_code(15)
+#define LOP_CMPLX_HUGE_TOL spaacisds_lop_errmod.message_code(16)
+#define LOP_CMPLX_BAD_INT_CUR spaacisds_lop_errmod.message_code(17)
+#define LOP_CMPLX_NULL_INT_CUR spaacisds_lop_errmod.message_code(18)
+#define LOP_CMPLX_NO_TOOL spaacisds_lop_errmod.message_code(19)
+#define LOP_OFF_BAD_OFFSET spaacisds_lop_errmod.message_code(20)
+#define LOP_OFF_NO_SURF spaacisds_lop_errmod.message_code(21)
+#define LOP_OFF_BAD_CURVATURE spaacisds_lop_errmod.message_code(22)
+#define LOP_OFF_BAD_MODEL_EXTENTS spaacisds_lop_errmod.message_code(23)
+#define LOP_OFF_NO_APPROX_CUR spaacisds_lop_errmod.message_code(24)
+#define LOP_HOL_MULTI_SHELL spaacisds_lop_errmod.message_code(25)
+#define LOP_HOL_ALL_OPEN spaacisds_lop_errmod.message_code(26)
+#define LOP_HOL_BAD_VBL_OFFSET spaacisds_lop_errmod.message_code(27)
+#define LOP_TAP_BAD_NORMAL spaacisds_lop_errmod.message_code(28)
+#define LOP_TAP_BAD_ANGLE spaacisds_lop_errmod.message_code(29)
+#define LOP_TAP_NO_SURF spaacisds_lop_errmod.message_code(30)
+#define LOP_TAP_NO_ADJ_FACE spaacisds_lop_errmod.message_code(31)
+#define LOP_TAP_BAD_PICK spaacisds_lop_errmod.message_code(32)
+#define LOP_TAP_BAD_SURF spaacisds_lop_errmod.message_code(33)
+#define LOP_TAP_TAN_EDGE spaacisds_lop_errmod.message_code(34)
+#define LOP_TAP_NOR_FACE spaacisds_lop_errmod.message_code(35)
+#define LOP_TAP_DUP_FACE spaacisds_lop_errmod.message_code(36)
+#define LOP_TAP_BAD_EDGE spaacisds_lop_errmod.message_code(37)
+#define LOP_TAP_SURFACE_CROPPED spaacisds_lop_errmod.message_code(38)
+#define LOP_MOVE_BAD_TRANSFORM spaacisds_lop_errmod.message_code(39)
+#define LOP_NOT_IMPLEMENTED spaacisds_lop_errmod.message_code(40)
+#define LOP_BAD_BOX spaacisds_lop_errmod.message_code(41)
+#define LOP_BAD_BODY_TRANSFORM spaacisds_lop_errmod.message_code(42)
+#define LOP_TWK_NO_LOOP spaacisds_lop_errmod.message_code(43)
+#define LOP_INVALID_PLANE_TOL_OPTION spaacisds_lop_errmod.message_code(44)
+#define LOP_INVALID_API spaacisds_lop_errmod.message_code(45)
+#define LOP_SWP_BAD_RAIL_OR_PATH spaacisds_lop_errmod.message_code(46)
+#define LOP_LOOP_TYPE spaacisds_lop_errmod.message_code(47)
+#define LOP_SHEET_THICKEN_NON_MANIFOLD_VERTEX spaacisds_lop_errmod.message_code(48)
+#define LOP_TWK_NO_BODY spaacisds_lop_errmod.message_code(49)
+#define LOP_SHEET_EXTEND_EDGE_NO_SOLUTION spaacisds_lop_errmod.message_code(50)
+#define LOP_SHEET_EXTEND_COLLAPSED spaacisds_lop_errmod.message_code(51)
+#define LOP_TWK_NO_EDGE_SUPPLIED spaacisds_lop_errmod.message_code(52)
+#define LOP_TWK_BAD_EDGE_SUPPLIED spaacisds_lop_errmod.message_code(53)
+#define LOP_TWK_BAD_BODY_SUPPLIED spaacisds_lop_errmod.message_code(54)
+#define LOP_THICK_NO_RIM_FACE spaacisds_lop_errmod.message_code(55)
+#define LOP_THICK_NO_VENT_FACE spaacisds_lop_errmod.message_code(56)
+#define LOP_TWK_BAD_VERTEX spaacisds_lop_errmod.message_code(57)
+#define LOP_NO_LUMP_LEFT spaacisds_lop_errmod.message_code(58)
+#define LOP_BAD_EDM_OFFSET spaacisds_lop_errmod.message_code(59)
+#define LOP_BAD_EDM_OFFSET_MANUF spaacisds_lop_errmod.message_code(60)
+#define LOP_EDM_OUTWARD_OFFSET spaacisds_lop_errmod.message_code(61)
+#define LOP_EDM_INVALID_MOTION spaacisds_lop_errmod.message_code(62)
+#define LOP_EDM_REPRAM_TANGENT_EDGE spaacisds_lop_errmod.message_code(63)
+#define LOP_EDM_EDGE_NOT_MANUF spaacisds_lop_errmod.message_code(64)
+#define LOP_OFF_NO_TANGENT_EDGE spaacisds_lop_errmod.message_code(65)
+#define LOP_REPLACE_FACE_TOO_DIFFERENT spaacisds_lop_errmod.message_code(66)
+#define LOP_DBL_SIDED_FACE spaacisds_lop_errmod.message_code(67)
+#define LOP_BODY_NON_MANIFOLD spaacisds_lop_errmod.message_code(68)
+#define LOP_SHEET_EXTEND_NO_SOLUTION spaacisds_lop_errmod.message_code(69)
+#define LOP_SHEET_EXTEND_PERIODIC_SURF_CLOSES spaacisds_lop_errmod.message_code(70)
+#define LOP_SHEET_EXTEND_HIGH_CRV_EDGE spaacisds_lop_errmod.message_code(71)
+#define LOP_SHEET_EXTEND_BAD_EDGE_INPUT spaacisds_lop_errmod.message_code(72)
+#define LOP_SHEET_EXTEND_ZERO_EXTN spaacisds_lop_errmod.message_code(73)
+#define LOP_OP_BAD_INPUT_PAR spaacisds_lop_errmod.message_code(74)
+
+#endif /* SPAACISDS_LOP_ERRMOD_INCLUDED */

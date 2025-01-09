@@ -1,0 +1,29 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_MASSPROP_ERRMOD_INCLUDED
+#define SPAACISDS_MASSPROP_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_massprop_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_massprop_errmod;
+
+#endif
+#define CANNOT_DO_SURFACE spaacisds_massprop_errmod.message_code(0)
+#define MP_FAILED spaacisds_massprop_errmod.message_code(1)
+#define DIAG_FAILED spaacisds_massprop_errmod.message_code(2)
+#define DIAG_NEG spaacisds_massprop_errmod.message_code(3)
+#define BAD_ORIGINS spaacisds_massprop_errmod.message_code(4)
+#define TINY_VOLUME spaacisds_massprop_errmod.message_code(5)
+#define MP_1SIDED_SHEET spaacisds_massprop_errmod.message_code(6)
+#define MP_1SIDED_SHEET_CALC spaacisds_massprop_errmod.message_code(7)
+#define MP_1SIDED_SHEET_NO_CALC spaacisds_massprop_errmod.message_code(8)
+#define MP_VOID_BODY spaacisds_massprop_errmod.message_code(9)
+#define MP_DIFF_GEOM_COND spaacisds_massprop_errmod.message_code(10)
+
+#endif /* SPAACISDS_MASSPROP_ERRMOD_INCLUDED */

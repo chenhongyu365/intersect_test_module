@@ -1,0 +1,991 @@
+﻿// $Id: blend_smoke_test.hxx,v 1.4 2002/01/28 16:53:03 rocon Exp $
+/*******************************************************************/
+/*    Copyright (c) 1989-2020 by Spatial Corp.                     */
+/*    All rights reserved.                                         */
+/*    Protected by U.S. Patents 5,257,205; 5,351,196; 6,369,815;   */
+/*                              5,982,378; 6,462,738; 6,941,251    */
+/*    Protected by European Patents 0503642; 69220263.3            */
+/*    Protected by Hong Kong Patent 1008101A                       */
+/*******************************************************************/
+
+#include "ACIS_Win.h"
+#include "blend_examples.hxx"
+#include "bool_examples.hxx"
+#include "constructors_examples.hxx"
+#include "gme_cstrapi_1_api_make_trface_examples.hxx"
+#include "gme_cstrapi_1_api_mk_ed_conic_examples.hxx"
+#include "gme_cstrapi_1_curve_spline2_example.hxx"
+#include "gme_cstrapi_1_edge_spiral_example.hxx"
+#include "gme_cstrapi_1_edge_spring_example.hxx"
+#include "gme_cstrapi_1_api_build_wire_example.hxx"
+#include "gme_cstrapi_1_face_spl_ctrlpts_example.hxx"
+#include "gme_cstrapi_1_face_torus_example.hxx"
+#include "gme_cstrapi_1_fit_plane_example.hxx"
+#include "gme_cstrapi_1_make_cuboid_example.hxx"
+#include "gme_cstrapi_1_make_frustum_example.hxx"
+#include "gme_cstrapi_1_make_prism_example.hxx"
+#include "gme_cstrapi_1_make_pyramid_example.hxx"
+#include "gme_cstrapi_1_make_spface_example.hxx"
+#include "gme_cstrapi_1_make_sphere_example.hxx"
+#include "gme_cstrapi_1_make_spline_example.hxx"
+#include "gme_cstrapi_1_make_torus_example.hxx"
+#include "gme_cstrapi_1_make_wire_example.hxx"
+#include "gme_cstrapi_1_mk_ed_line_example.hxx"
+#include "gme_cstrapi_1_orient_wire_example.hxx"
+#include "gme_cstrapi_1_reverse_body_example.hxx"
+#include "gme_cstrapi_1_reverse_wire_example.hxx"
+#include "gme_cstrapi_1_solid_block_examples.hxx"
+#include "gme_cstrapi_1_solid_sphere_example.hxx"
+#include "gme_cstrapi_1_wiggle_example.hxx"
+#include "gme_cstrapi_1_trans_edge_example.hxx"
+#include "gme_cstrapi_2_api_face_torus_example.hxx"
+#include "gme_cstrapi_2_api_make_wire_example.hxx"
+#include "gme_cstrapi_2_ed_line_example.hxx"
+#include "gme_cstrapi_2_edge_spiral_example.hxx"
+#include "gme_cstrapi_2_make_frustum_example.hxx"
+#include "gme_cstrapi_2_make_prism_example.hxx"
+#include "gme_cstrapi_2_make_sphere_example.hxx"
+#include "gme_cstrapi_2_make_spline_example.hxx"
+#include "gme_cstrapi_2_make_torus_example.hxx"
+#include "gme_cstrapi_2_make_trface_example.hxx"
+#include "gme_cstrapi_2_solid_sphere_example.hxx"
+#include "gme_cstrapi_2_wiggle_example.hxx"
+#include "gme_cstrapi_3_api_wiggle_example.hxx"
+#include "gme_cstrapi_3_make_frustum_example.hxx"
+#include "gme_cstrapi_3_make_torus_example.hxx"
+#include "gme_cstrapi_3_solid_sphere_example.hxx"
+#include "gme_cstrapi_build_wire_example.hxx"
+#include "gme_cstrapi_curve_arc_center_edge_example.hxx"
+#include "gme_cstrapi_curve_arc_diagonal_example.hxx"
+#include "gme_cstrapi_curve_bezier_example.hxx"
+#include "gme_cstrapi_curve_law_example.hxx"
+#include "gme_cstrapi_curve_spline2_example.hxx"
+#include "gme_cstrapi_ed_line_example.hxx"
+#include "gme_cstrapi_edge_law_example.hxx"
+#include "gme_cstrapi_edge_spiral_example.hxx"
+#include "gme_cstrapi_edge_spring_example.hxx"
+#include "gme_cstrapi_edge_spring_law_example.hxx"
+#include "gme_cstrapi_edge_spring_taper_example.hxx"
+#include "gme_cstrapi_enclose_void_example.hxx"
+#include "gme_cstrapi_face_conic_example.hxx"
+#include "gme_cstrapi_face_law_example.hxx"
+#include "gme_cstrapi_face_spl_ctrlpts_example.hxx"
+#include "gme_cstrapi_find_face_example.hxx"
+#include "gme_cstrapi_fit_line_example.hxx"
+#include "gme_cstrapi_fit_plane_example.hxx"
+#include "gme_cstrapi_loop_external_example.hxx"
+#include "gme_cstrapi_make_approx_surface_example.hxx"
+#include "gme_cstrapi_make_cuboid_example.hxx"
+#include "gme_cstrapi_make_frustum_example.hxx"
+#include "gme_cstrapi_make_spface_example.hxx"
+#include "gme_cstrapi_make_sphere_example.hxx"
+#include "gme_cstrapi_make_torus_example.hxx"
+#include "gme_cstrapi_make_trface_example.hxx"
+#include "gme_cstrapi_make_wire_example.hxx"
+#include "gme_cstrapi_mk_by_faces_example.hxx"
+#include "gme_cstrapi_mk_ed_conic_examples.hxx"
+#include "gme_cstrapi_modify_line_example.hxx"
+#include "gme_cstrapi_orient_wire_example.hxx"
+#include "gme_cstrapi_reverse_body_example.hxx"
+#include "gme_cstrapi_reverse_face_example.hxx"
+#include "gme_cstrapi_reverse_wire_example.hxx"
+#include "gme_cstrapi_solid_block_examples.hxx"
+#include "gme_cstrapi_solid_sphere_example.hxx"
+#include "gme_cstrapi_split_edge_at_disc_examples.hxx"
+#include "gme_cstrapi_trans_edge_example.hxx"
+#include "gme_cstrapi_trim_middle_example.hxx"
+#include "gme_cstrapi_wiggle_example.hxx"
+#include "gme_cstrapi_make_ewire_example.hxx"
+#include "incr_examples.hxx"
+#include "lop_examples1.hxx"
+#include "mt_examples.hxx"
+#include "resource.h"
+#include "skin_examples.hxx"
+#include "spd_ent10_example.hxx"
+#include "spd_ent11_example.hxx"
+#include "spd_ent13_example.hxx"
+#include "spd_ent1_example.hxx"
+#include "spd_ent2_example.hxx"
+#include "spd_ent6_example.hxx"
+#include "spd_ent7_example.hxx"
+#include "spd_ent8_example.hxx"
+#include "spd_ent99_example.hxx"
+#include "stdafx.h"
+#include "stitch_examples.hxx"
+#include "sweep_examples.hxx"
+#include "template_examples.hxx"
+// This function converts a Windows menu resource ID into an aei function pointer.
+ACIS_fp find_which_ACIS(WORD id) {
+    switch(id) {
+        case ID_BOOLEAN_UNITE:
+            return aei_BOOL_UNITE;
+        case ID_BOOLEAN_INTERSECTION:
+            return aei_BOOL_INTERSECTION;
+        case ID_BOOLEAN_SUBTRACTION:
+            return aei_BOOL_SUBTRACTION;
+        case ID_BOOLEAN_CHOP:
+            return aei_BOOL_CHOP;
+        case ID_BOOLEAN_PROJECTWIRETOBODY:
+            return aei_BOOL_PROJECT_WIRE_TO_BODY;
+        case ID_BOOLEAN_PROJECTEDGETOFACE:
+            return aei_BOOL_PROJECT_EDGE_TO_FACE;
+        case ID_BOOLEAN_MAKESHADOW:
+            return aei_BOOL_MAKE_SHADOW;
+        case ID_BOOLEAN_FACESUBDIVIDE:
+            return aei_BOOL_SUBDIVIDE_FACE;
+        case ID_BOOLEAN_SPLITWIREEDGE:
+            return aei_BOOL_SPLIT_WIRE_EDGE;
+        case ID_SWEEP_SWEEP_PIPE_THRU:
+            return aei_SWEEP_PIPE_THROUGH_E_BLOCK;
+        case ID_SWEEP_SWEEP_WEDGE:
+            return aei_SWEEP_WEDGE;
+        case ID_SWEEP_SWEEP_DRAFTEDCONE1:
+            return aei_SWEEP_DRAFTED_CONE1;
+        case ID_SWEEP_SWEEP_DRAFTEDBOXWITHHOLE:
+            return aei_SWEEP_DRAFTED_BOX_WITH_HOLE;
+        case ID_SWEEP_SWEEP_DEFORMEDTUBING:
+            return aei_SWEEP_DEFORMED_TUBING;
+        case ID_SWEEP_SWEEP_DEGENDRAFTBOX:
+            return aei_SWEEP_DEGEN_DRAFT_BOX;
+        case ID_SWEEP_SWEEP_PIPETHRUSLOTTEDBLOCK:
+            return aei_SWEEP_PIPE_THROUGH_SLOTTED_BLOCK;
+        case ID_SWEEP_SWEEP_DRAFTEDBOXCYL:
+            return aei_SWEEP_DRAFTED_BOX_CYL;
+        case ID_SWEEP_SWEEP_TORUSTHRUEBLOCK:
+            return aei_SWEEP_TORUS_THROUGH_E_BLOCK;
+        case ID_SWEEP_SWEEP_HEART:
+            return aei_SWEEP_HEART;
+        case ID_SWEEP_SWEEP_APPLEPEAL:
+            return aei_SWEEP_APPLE_PEEL;
+        case ID_SWEEP_SWEEP_RIGIDTUBE1:
+            return aei_SWEEP_RIGID_TUBE1;
+        case ID_SWEEP_SWEEP_UFO1:
+            return aei_SWEEP_UFO1;
+        case ID_SWEEP_SWEEPTWISTEDTUBE:
+            return aei_SWEEP_TWISTED_TUBE;
+        case ID_SWEEP_SWEEP_RIGIDTUBE2:
+            return aei_SWEEP_RIGID_TUBE2;
+        case ID_SWEEP_SWEEPSHAFT:
+            return aei_SWEEP_SHAFT;
+        case ID_SWEEP_SWEEPRIGIDPIPE:
+            return aei_SWEEP_RIGID_PIPE;
+        case ID_SWEEP_SWEEPRIGIDPIPESHAFT:
+            return aei_SWEEP_RIGID_PIPE_SHAFT;
+        case ID_SWEEP_SWEEPFIN:
+            return aei_SWEEP_FIN;
+        case ID_SWEEP_SWEEPABSTRACTART:
+            return aei_SWEEP_ABSTRACT_ART;
+        case ID_SWEEP_SWEEPDRAFTEDTUBE:
+            return aei_SWEEP_DRAFTED_TUBE;
+        case ID_SWEEP_SWEEP_DRAFTEDPOLYGON1:
+            return aei_SWEEP_DRAFTED_POLYGON1;
+        case ID_SWEEP_SWEEPDRAFTEDPOLYGON2:
+            return aei_SWEEP_DRAFTED_POLYGON2;
+        case ID_SWEEP_SWEEPARCH:
+            return aei_SWEEP_ARCH;
+        case ID_SWEEP_SWEEPDRAFTEDBOX1:
+            return aei_SWEEP_DRAFTED_BOX1;
+        case ID_SWEEP_SWEEPDRAFTEDCONE2:
+            return aei_SWEEP_DRAFTED_CONE2;
+        case ID_SWEEP_SWEEPANGLEDPOLYGON:
+            return aei_SWEEP_ANGLED_POLYGON;
+        case ID_SWEEP_SWEEPDRAFTEDBOX2:
+            return aei_SWEEP_DRAFTED_BOX2;
+        case ID_SWEEP_SWEEPUFO2:
+            return aei_SWEEP_UFO2;
+        case ID_SKIN_SKIN_YO_YO:
+            return aei_SKIN_YO_YO;
+        case ID_MULTI_SLICE:
+            return aei_MT_EGG_SLICE;
+        case ID_PROCESS_MT_API:
+            return aei_PROCESS_MT;
+        case ID_MT_WORK_PACKET_QUEUE:
+            return aei_MT_WORK_PACKET_QUEUE;
+        case ID_STITCH_MTSTITCH:
+            return aei_STITCH_FULL;
+        case ID_CONSTRUCTORS_TEXT_HELLO:
+            return aei_TEXT_FROM_WIRE_HELLO;
+        case ID_HLC_INCR_BOOL:
+            return aei_INCR_BOOL;
+
+            // Blending
+        case ID_WIGGLE_CONSTRADIUS:
+            return aei_BLEND_WIGGLE_CONST;
+        case ID_WIGGLE_VARIABLERADIUS:
+            return aei_BLEND_WIGGLE_VAR;
+        case ID_BLENDING_HOLDLINE:
+            return aei_BLEND_HOLDLINE;
+        case ID_BLENDING_ELLIPTICAL:
+            return aei_BLEND_ELLIPTICAL;
+        case ID_BLEND_BLEND_RADIUS_TRANSITION:
+            return aei_BLEND_RADIUS_TRANSITION1;
+        case ID_BLENDING_GRIP:
+            return aei_BLEND_GRIP;
+        case ID_BLENDING_PENCIL:
+            return aei_BLEND_PENCIL;
+        case ID_BLENDING_SPLINECHAMFER:
+            return aei_BLEND_SPLINE_CHAMFER;
+        case ID_BLENDING_TWISTEDBAR:
+            return aei_BLEND_TWISTED_BAR;
+        case ID_BLENDING_WINEGLASS:
+            return aei_BLEND_WINE_GLASS;
+        case ID_BLENDING_NUMBERNINE:
+            return aei_BLEND_NUMBER_NINE;
+        case ID_BLENDING_ANNOTATIONS:
+            return aei_BLEND_ANNOTATION;
+        case ID_BLENDING_DICE:
+            return aei_BLEND_DICE;
+        case ID_BLENDING_BRITISHDICE:
+            return aei_BLEND_BRITISH_DICE;
+        case ID_BLENDING_BLENDMITREANDCAP:
+            return aei_BLEND_MITRE_AND_CAP;
+        case ID_BLENDING_CLOWNHAT:
+            return aei_BLEND_CLOWN_HAT;
+
+            // Skinning
+        case ID_SKIN_STARSEED1:
+            return aei_SKIN_STAR_SEED1;
+        case ID_SKIN_STARSEED2:
+            return aei_SKIN_STAR_SEED2;
+        case ID_SKIN_STARTDRUM:
+            return aei_SKIN_STAR_DRUM;
+        case ID_SKIN_SEEDPOD:
+            return aei_SKIN_SEED_POD;
+        case ID_SKIN_TOP:
+            return aei_SKIN_TOP;
+        case ID_SKIN_BOTTLE:
+            return aei_SKIN_BOTTLE;
+        case ID_SKIN_VASE:
+            return aei_SKIN_VASE;
+        case ID_SKIN_WORM:
+            return aei_SKIN_WORM;
+        case ID_SKIN_NOSESTAR:
+            return aei_SKIN_NOSE_STAR;
+        case ID_SKIN_CURVEDSTARBO:
+            return aei_SKIN_CURVED_STAR_BODY;
+        case ID_SKIN_BADSTIRRUP:
+            return aei_SKIN_BAD_STIRRUP;
+        case ID_SKIN_GOODSTIRRUP:
+            return aei_SKIN_GOOD_STIRRUP;
+        case ID_SKIN_LENSEBODY:
+            return aei_SKIN_LENSE_BODY;
+        case ID_SKIN_BALLOON:
+            return aei_SKIN_BALLOON;
+        case ID_SKIN_TWISTEDSTARSEED:
+            return aei_SKIN_TWISTED_STAR_SEED;
+        case ID_SKIN_BALOONONCYLINDRICALFACE1:
+            return aei_SKIN_BALLOON_ON_CYLINDRICAL_FACE1;
+        case ID_SKIN_BALOONONCYLINDRICALFACE2:
+            return aei_SKIN_BALLOON_ON_CYLINDRICAL_FACE2;
+        case ID_SKIN_ROBOTTOOTH:
+            return aei_SKIN_ROBOT_TOOTH;
+        case ID_SKIN_BADSQUAREEGG:
+            return aei_SKIN_BAD_SQUARE_EGG;
+        case ID_SKIN_GOODSQUAREEGG:
+            return aei_SKIN_GOOD_SQUARE_EGG;
+        case ID_SKIN_DENTEDDOUGHNUT:
+            return aei_SKIN_DENTED_DOUGHNUT;
+        case ID_SKIN_FLOWER:
+            return aei_SKIN_FLOWER;
+
+            // Lop
+        case ID_LOP_TAPER_FACES1:
+            return aei_LOP_EDGE_TAPER_FACES1;
+        case ID_LOP_TAPER_FACES2:
+            return aei_LOP_EDGE_TAPER_FACES2;
+        case ID_LOP_TAPER_FACES3:
+            return aei_LOP_PLANE_TAPER_FACES;
+        case ID_MOVE_MOVEFACES:
+            return aei_LOP_MOVE_FACES_TRANSLATE;
+        case ID_MOVE_ROTATEFACES:
+            return aei_LOP_MOVE_FACES_ROTATE;
+        case ID_OFFSET_OFFSETFACES:
+            return aei_LOP_OFFSET_FACES;
+        case ID_OFFSET_OFFSETBODY1:
+            return aei_LOP_OFFSET_BODY_NEGOFST;
+
+        case ID_CUBOID_DEMO:
+            return aei_CUBOID_DEMO;
+        case ID_FACE_TORUS:
+            return aei_FACE_TORUS;
+        case ID_FACE_SPL_INTP:
+            return aei_FACE_SPL_INTP;
+        case ID_EDGE_CUBIC:
+            return aei_EDGE_CUBIC;
+
+        case ID_SPRING_DEMO1:
+            return aei_SPRING_DEMO1;
+        case ID_SPRING_DEMO2:
+            return aei_SPRING_DEMO2;
+        case ID_SPRING_DEMO3:
+            return aei_SPRING_DEMO3;
+        case ID_SPRING_DEMO4:
+            return aei_SPRING_DEMO4;
+        case ID_SPRING_DEMO5:
+            return aei_SPRING_DEMO5;
+
+        case ID_SPRING_LAW_DEMO1:
+            return aei_SPRING_LAW_DEMO1;
+        case ID_SPRING_LAW_DEMO2:
+            return aei_SPRING_LAW_DEMO2;
+        case ID_SPRING_LAW_DEMO3:
+            return aei_SPRING_LAW_DEMO3;
+
+        case ID_SPRING_TAPER_DEMO1:
+            return aei_SPRING_TAPER_DEMO1;
+        case ID_SPRING_TAPER_DEMO2:
+            return aei_SPRING_TAPER_DEMO2;
+        case ID_SPRING_TAPER_DEMO3:
+            return aei_SPRING_TAPER_DEMO3;
+        case ID_SPRING_TAPER_DEMO4:
+            return aei_SPRING_TAPER_DEMO4;
+        case ID_SPRING_TAPER_DEMO5:
+            return aei_SPRING_TAPER_DEMO5;
+        case ID_SPRING_TAPER_DEMO6:
+            return aei_SPRING_TAPER_DEMO6;
+
+        case ID_REVERSE_BODY_DEMO1:
+            return aei_REVERSE_BODY_DEMO1;
+        case ID_REVERSE_BODY_DEMO2:
+            return aei_REVERSE_BODY_DEMO2;
+        case ID_REVERSE_BODY_DEMO3:
+            return aei_REVERSE_BODY_DEMO3;
+        case ID_REVERSE_BODY_DEMO4:
+            return aei_REVERSE_BODY_DEMO4;
+        case ID_REVERSE_BODY_DEMO5:
+            return aei_REVERSE_BODY_DEMO5;
+        case ID_REVERSE_BODY_DEMO6:
+            return aei_REVERSE_BODY_DEMO6;
+        case ID_REVERSE_BODY_DEMO7:
+            return aei_REVERSE_BODY_DEMO7;
+
+        case ID_1_REVERSE_BODY_DEMO1:
+            return aei_REVERSE_BODY_DEMO1;
+        case ID_1_REVERSE_BODY_DEMO2:
+            return aei_REVERSE_BODY_DEMO2;
+        case ID_1_REVERSE_BODY_DEMO3:
+            return aei_REVERSE_BODY_DEMO3;
+        case ID_1_REVERSE_BODY_DEMO4:
+            return aei_REVERSE_BODY_DEMO4;
+        case ID_1_REVERSE_BODY_DEMO5:
+            return aei_REVERSE_BODY_DEMO5;
+        case ID_1_REVERSE_BODY_DEMO6:
+            return aei_REVERSE_BODY_DEMO6;
+        case ID_1_REVERSE_BODY_DEMO7:
+            return aei_REVERSE_BODY_DEMO7;
+
+        case ID_ORIENT_WIRE_DEMO1:
+            return aei_ORIENT_WIRE_DEMO1;
+        case ID_ORIENT_WIRE_DEMO2:
+            return aei_ORIENT_WIRE_DEMO2;
+        case ID_ORIENT_WIRE_DEMO3:
+            return aei_ORIENT_WIRE_DEMO3;
+
+        case ID_1_ORIENT_WIRE_DEMO1:
+            return aei_1_ORIENT_WIRE_DEMO1;
+        case ID_1_ORIENT_WIRE_DEMO2:
+            return aei_1_ORIENT_WIRE_DEMO2;
+        case ID_1_ORIENT_WIRE_DEMO3:
+            return aei_1_ORIENT_WIRE_DEMO3;
+        case ID_1_ORIENT_WIRE_DEMO4:
+            return aei_1_ORIENT_WIRE_DEMO4;
+
+        case ID_APPROX_SURFACE_DEMO1:
+            return aei_APPROX_SURFACE_DEMO1;
+        case ID_APPROX_SURFACE_DEMO2:
+            return aei_APPROX_SURFACE_DEMO2;
+        case ID_APPROX_SURFACE_DEMO3:
+            return aei_APPROX_SURFACE_DEMO3;
+        case ID_APPROX_SURFACE_DEMO4:
+            return aei_APPROX_SURFACE_DEMO4;
+        case ID_APPROX_SURFACE_DEMO5:
+            return aei_APPROX_SURFACE_DEMO5;
+
+        case ID_SPFACE_DEMO1:
+            return aei_SPFACE_DEMO1;
+        case ID_SPFACE_DEMO2:
+            return aei_SPFACE_DEMO2;
+        case ID_SPFACE_DEMO3:
+            return aei_SPFACE_DEMO3;
+        case ID_SPFACE_DEMO4:
+            return aei_SPFACE_DEMO4;
+        case ID_1_SPFACE_DEMO1:
+            return aei_1_SPFACE_DEMO1;
+        case ID_1_SPFACE_DEMO2:
+            return aei_1_SPFACE_DEMO2;
+        case ID_1_SPFACE_DEMO3:
+            return aei_1_SPFACE_DEMO3;
+        case ID_1_SPFACE_DEMO4:
+            return aei_1_SPFACE_DEMO4;
+        case ID_1_SPFACE_DEMO5:
+            return aei_1_SPFACE_DEMO5;
+        case ID_MODIFY_LINE_DEMO:
+            return aei_MODIFY_LINE_DEMO;
+        case ID_REVERSE_WIRE_DEMO1:
+            return aei_REVERSE_WIRE_DEMO1;
+        case ID_REVERSE_WIRE_DEMO2:
+            return aei_REVERSE_WIRE_DEMO2;
+        case ID_1_REVERSE_WIRE_DEMO1:
+            return aei_1_REVERSE_WIRE_DEMO1;
+        case ID_1_REVERSE_WIRE_DEMO2:
+            return aei_1_REVERSE_WIRE_DEMO2;
+        case ID_EDGE_LAW_DEMO1:
+            return aei_EDGE_LAW_DEMO1;
+        case ID_EDGE_LAW_DEMO2:
+            return aei_EDGE_LAW_DEMO2;
+        case ID_EDGE_LAW_DEMO3:
+            return aei_EDGE_LAW_DEMO3;
+
+        case ID_FACE_LAW_DEMO1:
+            return aei_FACE_LAW_DEMO1;
+        case ID_FACE_LAW_DEMO2:
+            return aei_FACE_LAW_DEMO2;
+        case ID_FACE_LAW_DEMO3:
+            return aei_FACE_LAW_DEMO3;
+
+        case ID_2_MAKE_TRFACE_DEMO1:
+            return aei_2_MAKE_TRFACE_DEMO1;
+        case ID_2_MAKE_TRFACE_DEMO2:
+            return aei_2_MAKE_TRFACE_DEMO2;
+
+        case ID_FIT_LINE_DEMO:
+            return aei_FIT_LINE_DEMO;
+        case ID_FIT_PLANE_DEMO:
+            return aei_FIT_PLANE_DEMO;
+        case ID_MAKE_WIRE_DEMO1:
+            return aei_MAKE_WIRE_DEMO1;
+        case ID_MAKE_WIRE_DEMO2:
+            return aei_MAKE_WIRE_DEMO2;
+        case ID_MAKE_WIRE_DEMO3:
+            return aei_MAKE_WIRE_DEMO3;
+
+        // build wire
+        case ID_BUILD_WIRE_DEMO1:
+            return aei_BUILD_WIRE_DEMO1;
+        case ID_BUILD_WIRE_DEMO2:
+            return aei_BUILD_WIRE_DEMO2;
+        case ID_BUILD_WIRE_DEMO3:
+            return aei_BUILD_WIRE_DEMO3;
+        case ID_BUILD_WIRE_DEMO4:
+            return aei_BUILD_WIRE_DEMO4;
+        case ID_1_BUILD_WIRE_DEMO1:
+            return aei_1_BUILD_WIRE_DEMO1;
+        case ID_1_BUILD_WIRE_DEMO2:
+            return aei_1_BUILD_WIRE_DEMO2;
+
+        case ID_REVERSE_FACE_DEMO1:
+            return aei_REVERSE_FACE_DEMO1;
+        case ID_REVERSE_FACE_DEMO2:
+            return aei_REVERSE_FACE_DEMO2;
+        case ID_REVERSE_FACE_DEMO3:
+            return aei_REVERSE_FACE_DEMO3;
+        case ID_REVERSE_FACE_DEMO4:
+            return aei_REVERSE_FACE_DEMO4;
+        case ID_FIND_FACE_DEMO1:
+            return aei_FIND_FACE_DEMO1;
+        case ID_FIND_FACE_DEMO2:
+            return aei_FIND_FACE_DEMO2;
+        case ID_FIND_FACE_DEMO3:
+            return aei_FIND_FACE_DEMO3;
+        case ID_FIND_FACE_DEMO4:
+            return aei_FIND_FACE_DEMO4;
+
+        case ID_CUBOID_DEMO1:
+            return aei_CUBOID_DEMO1;
+        case ID_CUBOID_DEMO2:
+            return aei_CUBOID_DEMO2;
+        case ID_CUBOID_DEMO3:
+            return aei_CUBOID_DEMO3;
+        case ID_CUBOID_DEMOO1:
+            return aei_CUBOID_DEMO01;
+        case ID_CUBOID_DEMOO2:
+            return aei_CUBOID_DEMO02;
+        case ID_CUBOID_DEMOO3:
+            return aei_CUBOID_DEMO03;
+        case ID_CUBOID_DEMOO4:
+            return aei_CUBOID_DEMO04;
+        case ID_CUBOID_DEMOO5:
+            return aei_CUBOID_DEMO05;
+        case ID_FRUSTUM_DEMO1:
+            return aei_FRUSTUM_DEMO1;
+        case ID_FRUSTUM_DEMO2:
+            return aei_FRUSTUM_DEMO2;
+        case ID_FRUSTUM_DEMO3:
+            return aei_FRUSTUM_DEMO3;
+        case ID_1_FRUSTUM_DEMO1:
+            return aei_1_FRUSTUM_DEMO1;
+        case ID_1_FRUSTUM_DEMO2:
+            return aei_1_FRUSTUM_DEMO2;
+        case ID_1_FRUSTUM_DEMO3:
+            return aei_1_FRUSTUM_DEMO3;
+        case ID_1_FRUSTUM_DEMO4:
+            return aei_1_FRUSTUM_DEMO4;
+        case ID_1_FRUSTUM_DEMO5:
+            return aei_1_FRUSTUM_DEMO5;
+        case ID_2_FRUSTUM_DEMO1:
+            return aei_2_FRUSTUM_DEMO1;
+        case ID_2_FRUSTUM_DEMO2:
+            return aei_2_FRUSTUM_DEMO2;
+        case ID_2_FRUSTUM_DEMO3:
+            return aei_2_FRUSTUM_DEMO3;
+        case ID_2_FRUSTUM_DEMO4:
+            return aei_2_FRUSTUM_DEMO4;
+        case ID_3_FRUSTUM_DEMO1:
+            return aei_3_FRUSTUM_DEMO1;
+        case ID_3_FRUSTUM_DEMO2:
+            return aei_3_FRUSTUM_DEMO2;
+        case ID_3_FRUSTUM_DEMO3:
+            return aei_3_FRUSTUM_DEMO3;
+        case ID_3_FRUSTUM_DEMO4:
+            return aei_3_FRUSTUM_DEMO4;
+        case ID_3_FRUSTUM_DEMO5:
+            return aei_3_FRUSTUM_DEMO5;
+
+        case ID_WIGGLE_DEMO1:
+            return aei_WIGGLE_DEMO1;
+        case ID_WIGGLE_DEMO2:
+            return aei_WIGGLE_DEMO2;
+        case ID_WIGGLE_DEMO3:
+            return aei_WIGGLE_DEMO3;
+
+        case ID_3_WIGGLE_DEMO1:
+            return aei_make_wiggle_DEMO1;
+        case ID_3_WIGGLE_DEMO2:
+            return aei_make_wiggle_DEMO2;
+        case ID_3_WIGGLE_DEMO3:
+            return aei_make_wiggle_DEMO3;
+
+            // spd
+        case ID_HD_PEL_ENT6_DEMO1:
+            return aei_HD_PEL_ENT6_DEMO1;
+        case ID_HD_PEL_ENT6_DEMO2:
+            return aei_HD_PEL_ENT6_DEMO2;
+        case ID_HD_PEL_ENT6_DEMO3:
+            return aei_HD_PEL_ENT6_DEMO3;
+        case ID_HD_PEL_ENT6_DEMO4:
+            return aei_HD_PEL_ENT6_DEMO4;
+        case ID_HD_PEL_ENT7_DEMO1:
+            return aei_HD_PEL_ENT7_DEMO1;
+        case ID_HD_PEL_ENT7_DEMO2:
+            return aei_HD_PEL_ENT7_DEMO2;
+        case ID_HD_PEL_ENT7_DEMO3:
+            return aei_HD_PEL_ENT7_DEMO3;
+        case ID_HD_PEL_ENT7_DEMO4:
+            return aei_HD_PEL_ENT7_DEMO4;
+        case ID_HD_PEL_ENT7_DEMO5:
+            return aei_HD_PEL_ENT7_DEMO5;
+        case ID_HD_PEL_ENT7_DEMO6:
+            return aei_HD_PEL_ENT7_DEMO6;
+        case ID_HD_PEL_ENT7_DEMO7:
+            return aei_HD_PEL_ENT7_DEMO7;
+        case ID_HD_PEL_ENT7_DEMO8:
+            return aei_HD_PEL_ENT7_DEMO8;
+
+        case ID_HD_PEL_ENT8_DEMO1:
+            return aei_HD_PEL_ENT8_DEMO1;
+        case ID_HD_PEL_ENT8_DEMO2:
+            return aei_HD_PEL_ENT8_DEMO2;
+        case ID_SPD_ENT98:
+            return aei_SPD_ENT98;
+        case ID_HD_PEL_ENT10_DEMO1:
+            return aei_HD_PEL_ENT10_DEMO1;
+        case ID_HD_PEL_ENT10_DEMO2:
+            return aei_HD_PEL_ENT10_DEMO2;
+        case ID_HD_PEL_ENT2_DEMO:
+            return aei_HD_PEL_ENT2_DEMO;
+        case ID_HD_PEL_ENT1_DEMO:
+            return aei_HD_PEL_ENT1_DEMO;
+        case ID_HD_PEL_ENT11_DEMO1:
+            return aei_HD_PEL_ENT11_DEMO1;
+        case ID_HD_PEL_ENT11_DEMO2:
+            return aei_HD_PEL_ENT11_DEMO2;
+        case ID_HD_PEL_ENT11_DEMO3:
+            return aei_HD_PEL_ENT11_DEMO3;
+        case ID_HD_PEL_ENT11_DEMO4:
+            return aei_HD_PEL_ENT11_DEMO4;
+        case ID_HD_PEL_ENT11_DEMO5:
+            return aei_HD_PEL_ENT11_DEMO5;
+        case ID_HD_PEL_ENT11_DEMO6:
+            return aei_HD_PEL_ENT11_DEMO6;
+        case ID_HD_PEL_ENT13_DEMO:
+            return aei_HD_PEL_ENT13_DEMO;
+        case ID_HD_PEL_ENT99_DEMO1:
+            return aei_HD_PEL_ENT99_DEMO1;
+        case ID_HD_PEL_ENT99_DEMO2:
+            return aei_HD_PEL_ENT99_DEMO2;
+        case ID_HD_PEL_ENT99_DEMO3:
+            return aei_HD_PEL_ENT99_DEMO3;
+
+        case ID_SPIRAL_DEMO1:
+            return aei_SPIRAL_DEMO1;
+        case ID_SPIRAL_DEMO2:
+            return aei_SPIRAL_DEMO2;
+
+        case ID_ED_LINE_DEMO:
+            return aei_ED_LINE_DEMO;
+
+        case ID_SPLIT_EDGE_AT_DISC:
+            return aei_SPLIT_EDGE_AT_DISC_DEMO;
+        case ID_MK_ED_CONIC:
+            return aei_MK_ED_CONIC_DEMO;
+        case ID_MK_ED_CONIC_DEMO2:
+            return aei_MAKE_EDGE_CONIC_DEMO;
+
+            // 1_Wire
+        case ID_1_WIRE_DEMO1:
+            return aei_1_WIRE_DEMO1;
+        case ID_1_WIRE_DEMO2:
+            return aei_1_WIRE_DEMO2;
+        case ID_1_WIRE_DEMO3:
+            return aei_1_WIRE_DEMO3;
+        case ID_1_WIRE_DEMO4:
+            return aei_1_WIRE_DEMO4;
+            // wire_2
+        case ID_2_WIRE_DEMO1:
+            return aei_WIRE_DEMO1;
+        case ID_2_WIRE_DEMO2:
+            return aei_WIRE_DEMO2;
+        case ID_2_WIRE_DEMO3:
+            return aei_WIRE_DEMO3;
+        case ID_2_WIRE_DEMO4:
+            return aei_WIRE_DEMO4;
+            // 1_Spline
+        case ID_1_SPLINE_DEMO1:
+            return aei_1_SPLINE_DEMO1;
+        case ID_1_SPLINE_DEMO2:
+            return aei_1_SPLINE_DEMO2;
+            // 2_Spline
+        case ID_2_SPLINE_DEMO1:
+            return aei_2_SPLINE_DEMO1;
+            // CURVE_SPLINE2
+        case ID_CURVE_SPLINE2_DEMO1:
+            return aei_CURVE_SPLINE2_DEMO1;
+        case ID_CURVE_SPLINE2_DEMO2:
+            return aei_CURVE_SPLINE2_DEMO2;
+        case ID_CURVE_SPLINE2_DEMO3:
+            return aei_CURVE_SPLINE2_DEMO3;
+        case ID_CURVE_SPLINE2_DEMO4:
+            return aei_CURVE_SPLINE2_DEMO4;
+            // CURVE_LAW
+        case ID_CURVE_LAW_DEMO1:
+            return aei_CURVE_LAW_DEMO1;
+        case ID_CURVE_LAW_DEMO2:
+            return aei_CURVE_LAW_DEMO2;
+
+        case ID_1_CURVE_SPLINE2_DEMO1:
+            return aei_1_CURVE_SPLINE2_DEMO1;
+        case ID_1_CURVE_SPLINE2_DEMO2:
+            return aei_1_CURVE_SPLINE2_DEMO2;
+        case ID_1_CURVE_SPLINE2_DEMO3:
+            return aei_1_CURVE_SPLINE2_DEMO3;
+        case ID_1_CURVE_SPLINE2_DEMO4:
+            return aei_1_CURVE_SPLINE2_DEMO4;
+        case ID_1_CURVE_SPLINE2_DEMO5:
+            return aei_1_CURVE_SPLINE2_DEMO5;
+        case ID_1_CURVE_SPLINE2_DEMO6:
+            return aei_1_CURVE_SPLINE2_DEMO6;
+
+        // PRISM
+        case ID_MAKE_PRISM_DEMO1:
+            return aei_PRISM_DEMO1;
+        case ID_MAKE_PRISM_DEMO2:
+            return aei_PRISM_DEMO2;
+        case ID_MAKE_PRISM_DEMO3:
+            return aei_PRISM_DEMO3;
+
+        // SPHERE
+        case ID_MAKE_SPHERE_DEMO1:
+            return aei_SPHERE_DEMO1;
+        case ID_MAKE_SPHERE_DEMO2:
+            return aei_SPHERE_DEMO2;
+        case ID_MAKE_SPHERE_DEMO3:
+            return aei_SPHERE_DEMO3;
+        // SPHERE1
+        case ID_1_MAKE_SPHERE_DEMO1:
+            return aei_1_SPHERE_DEMO1;
+        case ID_1_MAKE_SPHERE_DEMO2:
+            return aei_1_SPHERE_DEMO2;
+        case ID_1_MAKE_SPHERE_DEMO3:
+            return aei_1_SPHERE_DEMO3;
+        case ID_1_MAKE_SPHERE_DEMO4:
+            return aei_1_SPHERE_DEMO4;
+        // Make SPHERE
+        case ID_2_MAKE_SPHERE_DEMO1:
+            return aei_MAKE_SPHERE_DEMO01;
+        case ID_2_MAKE_SPHERE_DEMO2:
+            return aei_MAKE_SPHERE_DEMO02;
+        case ID_2_MAKE_SPHERE_DEMO3:
+            return aei_MAKE_SPHERE_DEMO03;
+        case ID_2_MAKE_SPHERE_DEMO4:
+            return aei_MAKE_SPHERE_DEMO04;
+        case ID_2_MAKE_SPHERE_DEMO5:
+            return aei_MAKE_SPHERE_DEMO05;
+        // curve_arc_diagonal
+        case ID_ARC_DIAGONAL_DEMO1:
+            return aei_ArcDiagonal_DEMO1;
+        case ID_ARC_DIAGONAL_DEMO2:
+            return aei_ArcDiagonal_DEMO2;
+        case ID_ARC_DIAGONAL_DEMO3:
+            return aei_ArcDiagonal_DEMO3;
+        case ID_ARC_DIAGONAL_DEMO4:
+            return aei_ArcDiagonal_DEMO4;
+            // MAKE_TORUS
+        case ID_MAKE_TORUS_DEMO1:
+            return aei_MAKE_TORUS_DEMO1;
+        case ID_MAKE_TORUS_DEMO2:
+            return aei_MAKE_TORUS_DEMO2;
+        case ID_MAKE_TORUS_DEMO3:
+            return aei_MAKE_TORUS_DEMO3;
+        case ID_MAKE_TORUS_DEMO4:
+            return aei_MAKE_TORUS_DEMO4;
+        case ID_1_MAKE_TORUS_DEMO1:
+            return aei_1_MAKE_TORUS_DEMO1;
+        case ID_1_MAKE_TORUS_DEMO2:
+            return aei_1_MAKE_TORUS_DEMO2;
+        case ID_1_MAKE_TORUS_DEMO3:
+            return aei_1_MAKE_TORUS_DEMO3;
+        case ID_1_MAKE_TORUS_DEMO4:
+            return aei_1_MAKE_TORUS_DEMO4;
+
+        case ID_2_MAKE_TORUS_DEMO1:
+            return aei_2_MAKE_TORUS_DEMO1;
+        case ID_2_MAKE_TORUS_DEMO2:
+            return aei_2_MAKE_TORUS_DEMO2;
+        case ID_2_MAKE_TORUS_DEMO3:
+            return aei_2_MAKE_TORUS_DEMO3;
+        case ID_2_MAKE_TORUS_DEMO4:
+            return aei_2_MAKE_TORUS_DEMO4;
+
+        case ID_3_MAKE_TORUS_DEMO1:
+            return aei_3_MAKE_TORUS_DEMO1;
+        case ID_3_MAKE_TORUS_DEMO2:
+            return aei_3_MAKE_TORUS_DEMO2;
+        case ID_3_MAKE_TORUS_DEMO3:
+            return aei_3_MAKE_TORUS_DEMO3;
+        case ID_3_MAKE_TORUS_DEMO4:
+            return aei_3_MAKE_TORUS_DEMO4;
+
+        case ID_ENCLOSE_VOID_DEMO:
+            return aei_ENCLOSE_VOID_DEMO;
+
+        case ID_MK_ED_LINE_DEMO:
+            return aei_1_MK_ED_LINE_DEMO;
+        case ID_2_MK_ED_LINE_DEMO:
+            return aei_2_MK_ED_LINE_DEMO;
+
+        case ID_1_FACE_TORUS_DEMO1:
+            return aei_1_FACE_TORUS_DEMO1;
+
+        case ID_2_FACE_TORUS_DEMO1:
+            return aei_2_FACE_TORUS_DEMO1;
+        case ID_2_FACE_TORUS_DEMO2:
+            return aei_2_FACE_TORUS_DEMO2;
+        case ID_2_FACE_TORUS_DEMO3:
+            return aei_2_FACE_TORUS_DEMO3;
+
+        case ID_1_SPRING_DEMO1:
+            return aei_1_SPRING_DEMO1;
+        case ID_1_SPRING_DEMO2:
+            return aei_1_SPRING_DEMO2;
+
+        case ID_1_WIGGLE_DEMO1:
+            return aei_1_WIGGLE_DEMO1;
+        case ID_1_WIGGLE_DEMO2:
+            return aei_1_WIGGLE_DEMO2;
+
+        case ID_MK_BY_FACES_DEMO:
+            return aei_MK_BY_FACES_DEMO;
+
+        case ID_LOOP_EXTERNAL:
+            return aei_LOOP_EXTERNAL_DEMO;
+
+        case ID_1_EDGE_SPIRAL_DEMO1:
+            return aei_1_EDGE_SPIRAL_DEMO1;
+        case ID_1_EDGE_SPIRAL_DEMO2:
+            return aei_1_EDGE_SPIRAL_DEMO2;
+
+        case ID_1_Trans_Edge_DEMO1:
+            return aei_1_TRANS_EDGE_DEMO1;
+        case ID_1_Trans_Edge_DEMO2:
+            return aei_1_TRANS_EDGE_DEMO2;
+
+        case ID_2_EDGE_SPIRAL_DEMO1:
+            return aei_2_EDGE_SPIRAL_DEMO1;
+        case ID_2_EDGE_SPIRAL_DEMO2:
+            return aei_2_EDGE_SPIRAL_DEMO2;
+
+        case ID_CURVE_ARC_CENTER_EDGE_DEMO1:
+            return aei_CURVE_ARC_CENTER_EDGE_DEMO1;
+        case ID_CURVE_ARC_CENTER_EDGE_DEMO2:
+            return aei_CURVE_ARC_CENTER_EDGE_DEMO2;
+        case ID_CURVE_ARC_CENTER_EDGE_DEMO3:
+            return aei_CURVE_ARC_CENTER_EDGE_DEMO3;
+
+        case ID_FACE_CONIC_ELLI_DEMO1:
+            return aei_FACE_CONIC_DEMO1_1;
+        case ID_FACE_CONIC_ELLI_DEMO2:
+            return aei_FACE_CONIC_DEMO1_2;
+        case ID_FACE_CONIC_PARA_DEMO3:
+            return aei_FACE_CONIC_DEMO3;
+        case ID_FACE_CONIC_HYPER_DEMO4:
+            return aei_FACE_CONIC_DEMO4;
+        case ID_FACE_CONIC_ELLI_DISH_DEMO5:
+            return aei_FACE_CONIC_DEMO5;
+        case ID_FACE_CONIC_PARA_DISH_DEMO6:
+            return aei_FACE_CONIC_DEMO6;
+        case ID_FACE_CONIC_HYPER_DISH_DEMO7:
+            return aei_FACE_CONIC_DEMO7;
+
+        case ID_FACE_SPL_CTRLPTS_DEMO1:
+            return aei_FACE_SPL_CTRLPTS_DEMO1;
+        case ID_FACE_SPL_CTRLPTS_DEMO2:
+            return aei_FACE_SPL_CTRLPTS_DEMO2;
+        case ID_FACE_SPL_CTRLPTS_DEMO3:
+            return aei_FACE_SPL_CTRLPTS_DEMO3;
+
+        case ID_1_FACE_SPL_CTRLPTS_DEMO1:
+            return aei_1_FACE_SPL_CTRLPTS_DEMO1;
+        case ID_1_FACE_SPL_CTRLPTS_DEMO2:
+            return aei_1_FACE_SPL_CTRLPTS_DEMO2;
+        case ID_1_FACE_SPL_CTRLPTS_DEMO3:
+            return aei_1_FACE_SPL_CTRLPTS_DEMO3;
+            // TRIM_MIDDLE
+        case ID_TRIM_MIDDLE_DEMO1:
+            return aei_TRIM_MIDDLE_DEMO1;
+        case ID_TRIM_MIDDLE_DEMO2:
+            return aei_TRIM_MIDDLE_DEMO2;
+        case ID_TRIM_MIDDLE_DEMO3:
+            return aei_TRIM_MIDDLE_DEMO3;
+        case ID_TRIM_MIDDLE_DEMO4:
+            return aei_TRIM_MIDDLE_DEMO4;
+        case ID_TRIM_MIDDLE_DEMO5:
+            return aei_TRIM_MIDDLE_DEMO5;
+
+        case ID_TRANS_EDGE_DEMO1:
+            return aei_TRANS_EDGE_DEMO1;
+        case ID_TRANS_EDGE_DEMO2:
+            return aei_TRANS_EDGE_DEMO2;
+
+        case ID_1_MAKE_TRFACE_DEMO1:
+            return aei_1_MAKE_TRFACE_DEMO1;
+        case ID_1_MAKE_TRFACE_DEMO2:
+            return aei_1_MAKE_TRFACE_DEMO2;
+        case ID_1_MAKE_TRFACE_DEMO3:
+            return aei_1_MAKE_TRFACE_DEMO3;
+        case ID_1_MAKE_TRFACE_DEMO4:
+            return aei_1_MAKE_TRFACE_DEMO4;
+        case ID_1_MAKE_TRFACE_DEMO5:
+            return aei_1_MAKE_TRFACE_DEMO5;
+        case ID_1_MAKE_TRFACE_DEMO6:
+            return aei_1_MAKE_TRFACE_DEMO6;
+        case ID_1_MAKE_TRFACE_DEMO7:
+            return aei_1_MAKE_TRFACE_DEMO7;
+        case ID_1_MAKE_TRFACE_DEMO8:
+            return aei_1_MAKE_TRFACE_DEMO8;
+        case ID_1_MAKE_TRFACE_DEMO9:
+            return aei_1_MAKE_TRFACE_DEMO9;
+        case ID_1_MAKE_TRFACE_DEMO10:
+            return aei_1_MAKE_TRFACE_DEMO10;
+        case ID_1_MAKE_TRFACE_DEMO11:
+            return aei_1_MAKE_TRFACE_DEMO11;
+        case ID_1_MAKE_TRFACE_DEMO12:
+            return aei_1_MAKE_TRFACE_DEMO12;
+        case ID_1_MAKE_TRFACE_DEMO13:
+            return aei_1_MAKE_TRFACE_DEMO13;
+        case ID_1_MAKE_TRFACE_DEMO14:
+            return aei_1_MAKE_TRFACE_DEMO14;
+        case ID_1_MAKE_TRFACE_DEMO15:
+            return aei_1_MAKE_TRFACE_DEMO15;
+        case ID_1_MAKE_TRFACE_DEMO16:
+            return aei_1_MAKE_TRFACE_DEMO16;
+        case ID_1_MAKE_TRFACE_DEMO17:
+            return aei_1_MAKE_TRFACE_DEMO17;
+        case ID_1_MAKE_TRFACE_DEMO18:
+            return aei_1_MAKE_TRFACE_DEMO18;
+        case ID_1_MAKE_TRFACE_DEMO19:
+            return aei_1_MAKE_TRFACE_DEMO19;
+
+        case ID_2_WIGGLE_DEMO1:
+            return aei_2_WIGGLE_DEMO1;
+        case ID_2_WIGGLE_DEMO2:
+            return aei_2_WIGGLE_DEMO2;
+        case ID_2_WIGGLE_DEMO3:
+            return aei_2_WIGGLE_DEMO3;
+
+        case ID_SOLID_BLOCK_DEMO1:
+            return aei_SOLID_BLOCK_DEMO1;
+        case ID_SOLID_BLOCK_DEMO2:
+            return aei_SOLID_BLOCK_DEMO2;
+
+        case ID_1_SOLID_BLOCK_DEMO1:
+            return aei_1_SOLID_BLOCK_DEMO1;
+        case ID_1_SOLID_BLOCK_DEMO2:
+            return aei_1_SOLID_BLOCK_DEMO2;
+
+        case ID_SOLID_SPHERE_DEMO1:
+            return aei_SOLID_SPHERE_DEMO1;
+        case ID_SOLID_SPHERE_DEMO2:
+            return aei_SOLID_SPHERE_DEMO2;
+        case ID_SOLID_SPHERE_DEMO3:
+            return aei_SOLID_SPHERE_DEMO3;
+
+        case ID_1_SOLID_SPHERE_DEMO1:
+            return aei_1_SOLID_SPHERE_DEMO1;
+        case ID_1_SOLID_SPHERE_DEMO2:
+            return aei_1_SOLID_SPHERE_DEMO2;
+
+        case ID_2_MAKE_PRISM_DEMO1:
+            return aei_2_MAKE_PRISM_DEMO1;
+        case ID_2_MAKE_PRISM_DEMO2:
+            return aei_2_MAKE_PRISM_DEMO2;
+
+        // 2 solid sphere
+        case ID_2_SOLID_SPHERE_DEMO1:
+            return aei_2_SOLID_SPHERE_DEMO1;
+        case ID_2_SOLID_SPHERE_DEMO2:
+            return aei_2_SOLID_SPHERE_DEMO2;
+        case ID_2_SOLID_SPHERE_DEMO3:
+            return aei_2_SOLID_SPHERE_DEMO3;
+        case ID_2_SOLID_SPHERE_DEMO4:
+            return aei_2_SOLID_SPHERE_DEMO4;
+        case ID_2_SOLID_SPHERE_DEMO5:
+            return aei_2_SOLID_SPHERE_DEMO5;
+
+        case ID_MAKE_EWIRE_DEMO1:
+            return aei_MAKE_EWIRE_DEMO1;
+        case ID_MAKE_EWIRE_DEMO2:
+            return aei_MAKE_EWIRE_DEMO2;
+
+        case ID_CURVE_BEZIER_DEMO1:
+            return aei_CURVE_BEZIER_DEMO1;
+        case ID_CURVE_BEZIER_DEMO2:
+            return aei_CURVE_BEZIER_DEMO2;
+        case ID_CURVE_BEZIER_DEMO3:
+            return aei_CURVE_BEZIER_DEMO3;
+
+        default:
+            return nullptr;
+        // 3 solid sphere
+        case ID_3_SOLID_SPHERE_DEMO1:
+            return aei_3_SOLID_SPHERE_DEMO1;
+        case ID_3_SOLID_SPHERE_DEMO2:
+            return aei_3_SOLID_SPHERE_DEMO2;
+
+        case ID_TRFACE_DEMO1:
+            return aei_MAKE_TRFACE_DEMO1;
+        case ID_TRFACE_DEMO2:
+            return aei_MAKE_TRFACE_DEMO2;
+        case ID_TRFACE_DEMO3:
+            return aei_MAKE_TRFACE_DEMO3;
+        case ID_MAKE_PYRAMID_DEMO1:
+            return aei_1_PYRAMID_DEMO1;
+        case ID_MAKE_PYRAMID_DEMO2:
+            return aei_1_PYRAMID_DEMO2;
+        case ID_MAKE_PYRAMID_DEMO3:
+            return aei_1_PYRAMID_DEMO3;
+        case ID_MAKE_PYRAMID_DEMO4:
+            return aei_1_PYRAMID_DEMO4;
+        case ID_FIT_PLANE1_DEMO1:
+            return aei_1_FIT_PLANE_DEMO;
+    }
+}

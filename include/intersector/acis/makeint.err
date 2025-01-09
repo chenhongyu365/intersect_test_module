@@ -1,0 +1,29 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_MAKEINT_ERRMOD_INCLUDED
+#define SPAACISDS_MAKEINT_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_makeint_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_makeint_errmod;
+
+#endif
+#define BODY_EDGE_CRUMBLE spaacisds_makeint_errmod.message_code(0)
+#define BODY_VERTEX_CRUMBLE spaacisds_makeint_errmod.message_code(1)
+#define CONT_CRUMBLE spaacisds_makeint_errmod.message_code(2)
+#define GRAZING_VERT_SMOOTH spaacisds_makeint_errmod.message_code(3)
+#define MULTI_CALL spaacisds_makeint_errmod.message_code(4)
+#define NO_AUX_INT spaacisds_makeint_errmod.message_code(5)
+#define TOLERANCE_CRUMBLE spaacisds_makeint_errmod.message_code(6)
+#define TOO_MANY_AUX_INTS spaacisds_makeint_errmod.message_code(7)
+#define UNEXPECTED_TAN spaacisds_makeint_errmod.message_code(8)
+#define VERTEX_INT spaacisds_makeint_errmod.message_code(9)
+#define FF_MERGE_FAILURE spaacisds_makeint_errmod.message_code(10)
+
+#endif /* SPAACISDS_MAKEINT_ERRMOD_INCLUDED */

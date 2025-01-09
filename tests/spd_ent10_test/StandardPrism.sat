@@ -1,0 +1,70 @@
+200 0 1 0           
+15 acis_api_access 14 ACIS 34.0.1 NT 24 Thu Aug  8 09:43:46 2024 
+1 9.9999999999999995e-07 1e-10 
+-0 body $-1 $1 $-1 $-1 #
+-1 lump $-1 $-1 $2 $0 #
+-2 shell $-1 $-1 $-1 $3 $-1 $1 #
+-3 face $-1 $4 $5 $2 $-1 $6 forward single #
+-4 face $-1 $7 $8 $2 $-1 $9 forward single #
+-5 loop $-1 $-1 $10 $3 #
+-6 plane-surface $-1 0 1 0 0 0 -1 -1 0 0 forward_v I I I I #
+-7 face $-1 $11 $12 $2 $-1 $13 forward single #
+-8 loop $-1 $-1 $14 $4 #
+-9 plane-surface $-1 0 0 1 0 0 1 1 0 0 forward_v I I I I #
+-10 coedge $-1 $15 $16 $17 $18 1 $5 $-1 #
+-11 face $-1 $19 $20 $2 $-1 $21 forward single #
+-12 loop $-1 $-1 $22 $7 #
+-13 plane-surface $-1 1 0 0 0.70710678118654746 0.70710678118654746 -0 -0 0 -1 forward_v I I I I #
+-14 coedge $-1 $23 $24 $25 $26 0 $8 $-1 #
+-15 coedge $-1 $16 $10 $27 $28 1 $5 $-1 #
+-16 coedge $-1 $10 $15 $29 $30 1 $5 $-1 #
+-17 coedge $-1 $31 $32 $10 $18 0 $33 $-1 #
+-18 edge $-1 $34 $35 $10 $36 forward #
+-19 face $-1 $-1 $33 $2 $-1 $37 forward single #
+-20 loop $-1 $-1 $38 $11 #
+-21 plane-surface $-1 0 0 0 0 -1 0 0 0 -1 forward_v I I I I #
+-22 coedge $-1 $27 $39 $40 $41 1 $12 $-1 #
+-23 coedge $-1 $24 $14 $39 $42 0 $8 $-1 #
+-24 coedge $-1 $14 $23 $43 $44 0 $8 $-1 #
+-25 coedge $-1 $38 $40 $14 $26 1 $20 $-1 #
+-26 edge $-1 $45 $46 $14 $47 forward #
+-27 coedge $-1 $48 $22 $15 $28 0 $12 $-1 #
+-28 edge $-1 $49 $34 $15 $50 forward #
+-29 coedge $-1 $40 $38 $16 $30 0 $20 $-1 #
+-30 edge $-1 $35 $49 $16 $51 forward #
+-31 coedge $-1 $43 $17 $38 $52 0 $33 $-1 #
+-32 coedge $-1 $17 $43 $48 $53 1 $33 $-1 #
+-33 loop $-1 $-1 $32 $19 #
+-34 vertex $-1 $28 $54 #
+-35 vertex $-1 $30 $55 #
+-36 straight-curve $-1 0 1 0 0 -1 0 I I #
+-37 plane-surface $-1 0 1 0 -1 0 0 0 -0 1 forward_v I I I I #
+-38 coedge $-1 $29 $25 $31 $52 1 $20 $-1 #
+-39 coedge $-1 $22 $48 $23 $42 1 $12 $-1 #
+-40 coedge $-1 $25 $29 $22 $41 0 $20 $-1 #
+-41 edge $-1 $49 $46 $22 $56 forward #
+-42 edge $-1 $46 $57 $23 $58 forward #
+-43 coedge $-1 $32 $31 $24 $44 1 $33 $-1 #
+-44 edge $-1 $57 $45 $24 $59 forward #
+-45 vertex $-1 $52 $60 #
+-46 vertex $-1 $41 $61 #
+-47 straight-curve $-1 0 0 1 1 0 0 I I #
+-48 coedge $-1 $39 $27 $32 $53 0 $12 $-1 #
+-49 vertex $-1 $30 $62 #
+-50 straight-curve $-1 1 0 0 -0.70710678118654746 0.70710678118654746 0 I I #
+-51 straight-curve $-1 0 0 0 1 0 0 I I #
+-52 edge $-1 $35 $45 $38 $63 forward #
+-53 edge $-1 $34 $57 $48 $64 forward #
+-54 point $-1 0 1 0 #
+-55 point $-1 0 0 0 #
+-56 straight-curve $-1 1 0 0 0 0 1 I I #
+-57 vertex $-1 $53 $65 #
+-58 straight-curve $-1 1 0 1 -0.70710678118654746 0.70710678118654746 0 I I #
+-59 straight-curve $-1 0 1 1 0 -1 0 I I #
+-60 point $-1 0 0 1 #
+-61 point $-1 1 0 1 #
+-62 point $-1 1 0 0 #
+-63 straight-curve $-1 0 0 0 0 0 1 I I #
+-64 straight-curve $-1 0 1 0 0 0 1 I I #
+-65 point $-1 0 1 1 #
+End-of-ACIS-data 

@@ -1,0 +1,22 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_SUBTYPE_ERRMOD_INCLUDED
+#define SPAACISDS_SUBTYPE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_subtype_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_subtype_errmod;
+
+#endif
+#define UNKNOWN_SUBTYPE_BINARY spaacisds_subtype_errmod.message_code(0)
+#define UNKNOWN_SUBTYPE_OLD spaacisds_subtype_errmod.message_code(1)
+#define SUBTYPE_USE_COUNT_ERROR spaacisds_subtype_errmod.message_code(2)
+#define FILE_WITH_BAD_SUBTYPES spaacisds_subtype_errmod.message_code(3)
+
+#endif /* SPAACISDS_SUBTYPE_ERRMOD_INCLUDED */

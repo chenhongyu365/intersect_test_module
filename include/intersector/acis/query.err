@@ -1,0 +1,23 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_QUERY_ERRMOD_INCLUDED
+#define SPAACISDS_QUERY_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_query_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_query_errmod;
+
+#endif
+#define INCONS_INTS spaacisds_query_errmod.message_code(0)
+#define CLASH_WIRE_ENCOUNTERED spaacisds_query_errmod.message_code(1)
+#define CONTAINMENT_UNKNOWN spaacisds_query_errmod.message_code(2)
+#define MODIFIED_CLASH_TOL spaacisds_query_errmod.message_code(3)
+#define CLASH_TOLERANCE_TOO_BIG spaacisds_query_errmod.message_code(4)
+
+#endif /* SPAACISDS_QUERY_ERRMOD_INCLUDED */

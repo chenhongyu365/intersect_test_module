@@ -1,0 +1,20 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_FACE_ERRMOD_INCLUDED
+#define SPAACISDS_FACE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_face_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_face_errmod;
+
+#endif
+#define ILLEGAL_ENTITY_FOR_SPLCONV spaacisds_face_errmod.message_code(0)
+#define NO_MERGE_ATT_FAILED spaacisds_face_errmod.message_code(1)
+
+#endif /* SPAACISDS_FACE_ERRMOD_INCLUDED */

@@ -1,0 +1,37 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_COVER_ERRMOD_INCLUDED
+#define SPAACISDS_COVER_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_cover_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_cover_errmod;
+
+#endif
+#define DISCONN_EDS spaacisds_cover_errmod.message_code(0)
+#define NOT_ALL_INSIDE spaacisds_cover_errmod.message_code(1)
+#define NOT_EXT_ED spaacisds_cover_errmod.message_code(2)
+#define NO_INSIDE_COED spaacisds_cover_errmod.message_code(3)
+#define NO_NEXT_EXT_ED spaacisds_cover_errmod.message_code(4)
+#define WIRE_MET spaacisds_cover_errmod.message_code(5)
+#define WIRE_NOT_CLOSED spaacisds_cover_errmod.message_code(6)
+#define WIRE_HAS_BRANCH spaacisds_cover_errmod.message_code(7)
+#define WIRE_NOT_PLANAR spaacisds_cover_errmod.message_code(8)
+#define WIRES_NOT_COPLANAR spaacisds_cover_errmod.message_code(9)
+#define COULD_NOT_COVER spaacisds_cover_errmod.message_code(10)
+#define SNAP_TO_DEGEN spaacisds_cover_errmod.message_code(11)
+#define UNCOVERABLE spaacisds_cover_errmod.message_code(12)
+#define EDGE_OFF_SURFACE spaacisds_cover_errmod.message_code(13)
+#define SHEET_WITH_WIRE spaacisds_cover_errmod.message_code(14)
+#define NULL_FACE_CREATED spaacisds_cover_errmod.message_code(15)
+#define EDGE_NEEDS_SINGLE_FACE_COEDGE spaacisds_cover_errmod.message_code(16)
+#define INPUT_NOT_SOLID spaacisds_cover_errmod.message_code(17)
+#define HEAL_EDGES_NOT_CONVERGED spaacisds_cover_errmod.message_code(18)
+
+#endif /* SPAACISDS_COVER_ERRMOD_INCLUDED */

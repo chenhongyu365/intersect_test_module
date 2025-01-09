@@ -1,0 +1,880 @@
+﻿// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ACIS_WIN            ICON                    "ACIS_Win.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_ACIS_WIN MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Template"
+    BEGIN
+        MENUITEM "Cuboid Demo",                 ID_CUBOID_DEMO
+        POPUP "Body/Solid"
+        BEGIN
+            POPUP "Cuboid Demo"
+            BEGIN
+                MENUITEM "Cuboid Demo1",                ID_CUBOID_DEMO1
+                MENUITEM "Cuboid Demo2",                ID_CUBOID_DEMO2
+                MENUITEM "Cuboid Demo3",                ID_CUBOID_DEMO3
+            END
+            POPUP "Frustum Demo"
+            BEGIN
+                MENUITEM "Frustum Demo1",               ID_FRUSTUM_DEMO1
+                MENUITEM "Frustum Demo2",               ID_FRUSTUM_DEMO2
+                MENUITEM "Frustum Demo3",               ID_FRUSTUM_DEMO3
+                MENUITEM "Frustum_1 Demo1",               ID_1_FRUSTUM_DEMO1
+                MENUITEM "Frustum_1 Demo2",               ID_1_FRUSTUM_DEMO2
+                MENUITEM "Frustum_1 Demo3",               ID_1_FRUSTUM_DEMO3
+                MENUITEM "Frustum_1 Demo4",               ID_1_FRUSTUM_DEMO4
+                MENUITEM "Frustum_1 Demo5",               ID_1_FRUSTUM_DEMO5
+                MENUITEM "Frustum_2 Demo1",               ID_2_FRUSTUM_DEMO1
+                MENUITEM "Frustum_2 Demo2",               ID_2_FRUSTUM_DEMO2
+                MENUITEM "Frustum_2 Demo3",               ID_2_FRUSTUM_DEMO3
+                MENUITEM "Frustum_2 Demo4",               ID_2_FRUSTUM_DEMO4
+                MENUITEM "Frustum_3 Demo1",               ID_3_FRUSTUM_DEMO1
+                MENUITEM "Frustum_3 Demo2",               ID_3_FRUSTUM_DEMO2
+                MENUITEM "Frustum_3 Demo3",               ID_3_FRUSTUM_DEMO3
+                MENUITEM "Frustum_3 Demo4",               ID_3_FRUSTUM_DEMO4
+                MENUITEM "Frustum_3 Demo5",               ID_3_FRUSTUM_DEMO5
+            END
+            POPUP "Pyramid Demo"
+            BEGIN
+                MENUITEM "Pyramid Demo1",           ID_MAKE_PYRAMID_DEMO1
+                MENUITEM "Pyramid Demo2",           ID_MAKE_PYRAMID_DEMO2
+                MENUITEM "Pyramid Demo3",           ID_MAKE_PYRAMID_DEMO3
+                MENUITEM "Pyramid Demo4",           ID_MAKE_PYRAMID_DEMO4
+            END
+            POPUP "2_Solid Prism Demo"
+            BEGIN
+                MENUITEM "2_Solid Prism Demo1",             ID_2_MAKE_PRISM_DEMO1 
+                MENUITEM "2_Solid Prism Demo2",             ID_2_MAKE_PRISM_DEMO2
+            END
+            POPUP "Solid Block Demo"
+            BEGIN
+                MENUITEM "Solid Block Demo1",             ID_SOLID_BLOCK_DEMO1
+                MENUITEM "Solid Block Demo2",             ID_SOLID_BLOCK_DEMO2
+            END
+	    POPUP "Make Prism Demo"
+	    BEGIN
+		MENUITEM "Make Prism Demo1", ID_MAKE_PRISM_DEMO1
+		MENUITEM "Make Prism Demo2", ID_MAKE_PRISM_DEMO2
+		MENUITEM "Make Prism Demo3", ID_MAKE_PRISM_DEMO3
+	    END
+
+            POPUP "1_Solid Block Demo"
+            BEGIN
+                MENUITEM "1_Solid Block Demo1",             ID_1_SOLID_BLOCK_DEMO1
+                MENUITEM "1_Solid Block Demo2",             ID_1_SOLID_BLOCK_DEMO2
+            END
+
+            POPUP "Solid Sphere Demo"
+            BEGIN
+                MENUITEM "Solid Sphere Demo1",                ID_SOLID_SPHERE_DEMO1
+                MENUITEM "Solid Sphere Demo2",                ID_SOLID_SPHERE_DEMO2
+                MENUITEM "Solid Sphere Demo3",                ID_SOLID_SPHERE_DEMO3
+            END
+            POPUP "1_Solid Sphere Demo"
+            BEGIN
+                MENUITEM "1_Solid Sphere Demo1",                ID_1_SOLID_SPHERE_DEMO1
+                MENUITEM "1_Solid Sphere Demo2",                ID_1_SOLID_SPHERE_DEMO2
+            END
+            POPUP "2_Solid Sphere Demo"
+            BEGIN
+                MENUITEM "2_Solid Sphere Demo1",                ID_2_SOLID_SPHERE_DEMO1
+                MENUITEM "2_Solid Sphere Demo2",                ID_2_SOLID_SPHERE_DEMO2
+                MENUITEM "2_Solid Sphere Demo3",                ID_2_SOLID_SPHERE_DEMO3
+                MENUITEM "2_Solid Sphere Demo4",                ID_2_SOLID_SPHERE_DEMO4
+                MENUITEM "2_Solid Sphere Demo5",                ID_2_SOLID_SPHERE_DEMO5
+            END
+            POPUP "3_Solid Sphere Demo"
+            BEGIN
+                MENUITEM "3_Solid Sphere Demo1",                ID_3_SOLID_SPHERE_DEMO1
+                MENUITEM "3_Solid Sphere Demo2",                ID_3_SOLID_SPHERE_DEMO2
+            END
+            POPUP "4_Solid Sphere Demo"
+            BEGIN
+                MENUITEM "4_Solid Sphere Demo1",                ID_4_SOLID_SPHERE_DEMO1
+                MENUITEM "4_Solid Sphere Demo2",                ID_4_SOLID_SPHERE_DEMO2
+            END
+            POPUP "Wiggle Demo"
+            BEGIN
+                MENUITEM "Wiggle Demo1",                ID_WIGGLE_DEMO1
+                MENUITEM "Wiggle Demo2",                ID_WIGGLE_DEMO2
+                MENUITEM "Wiggle Demo3",                ID_WIGGLE_DEMO3
+            END
+            POPUP "1_Cuboid Demo"
+            BEGIN
+                MENUITEM "Cuboid Demoo1",                ID_CUBOID_DEMOO1
+                MENUITEM "Cuboid Demoo2",                ID_CUBOID_DEMOO2
+                MENUITEM "Cuboid Demoo3",                ID_CUBOID_DEMOO3
+                MENUITEM "Cuboid Demoo4",                ID_CUBOID_DEMOO4
+                MENUITEM "Cuboid Demoo5",                ID_CUBOID_DEMOO5
+            END
+            POPUP "Make Sphere Demo"
+            BEGIN
+                MENUITEM "Make Sphere Demo1",           ID_MAKE_SPHERE_DEMO1
+                MENUITEM "Make Sphere Demo2",           ID_MAKE_SPHERE_DEMO2
+                MENUITEM "Make Sphere Demo3",           ID_MAKE_SPHERE_DEMO3
+            END
+            POPUP "1_Make Sphere Demo" 
+			BEGIN 
+			    MENUITEM "1_Make Sphere Demo1",               ID_1_MAKE_SPHERE_DEMO1 
+				MENUITEM "1_Make Sphere Demo2",               ID_1_MAKE_SPHERE_DEMO2 
+				MENUITEM "1_Make Sphere Demo3",               ID_1_MAKE_SPHERE_DEMO3 
+				MENUITEM "1_Make Sphere Demo4",               ID_1_MAKE_SPHERE_DEMO4 
+			END
+			POPUP "2_Make Sphere Demo" 
+			BEGIN 
+			    MENUITEM "2_Make Sphere Demo1",               ID_2_MAKE_SPHERE_DEMO1 
+				MENUITEM "2_Make Sphere Demo2",               ID_2_MAKE_SPHERE_DEMO2 
+				MENUITEM "2_Make Sphere Demo3",               ID_2_MAKE_SPHERE_DEMO3 
+				MENUITEM "2_Make Sphere Demo4",               ID_2_MAKE_SPHERE_DEMO4 
+				MENUITEM "2_Make Sphere Demo5",               ID_2_MAKE_SPHERE_DEMO5 
+			END
+            POPUP "1_Wiggle Demo"
+            BEGIN
+                MENUITEM "1_Wiggle Demo1",                ID_1_WIGGLE_DEMO1
+                MENUITEM "1_Wiggle Demo2",                ID_1_WIGGLE_DEMO2
+            END
+			POPUP "3_Wiggle Demo"
+            BEGIN
+                MENUITEM "3_Wiggle Demo1",                ID_3_WIGGLE_DEMO1
+                MENUITEM "3_Wiggle Demo2",                ID_3_WIGGLE_DEMO2
+                MENUITEM "3_Wiggle Demo3",                ID_3_WIGGLE_DEMO3
+            END
+            POPUP "1_Wire Demo"
+            BEGIN
+                MENUITEM "1_Wire Demo 1",               ID_1_WIRE_DEMO1
+                MENUITEM "1_Wire Demo 2",               ID_1_WIRE_DEMO2
+                MENUITEM "1_Wire Demo 3",               ID_1_WIRE_DEMO3
+                MENUITEM "1_Wire Demo 4",               ID_1_WIRE_DEMO4
+            END
+			POPUP "2_WireBody Demo"
+            BEGIN
+                MENUITEM "2_WireBody Demo 1",               ID_2_WIRE_DEMO1
+                MENUITEM "2_WireBody Demo 2",               ID_2_WIRE_DEMO2
+                MENUITEM "2_WireBody Demo 3",               ID_2_WIRE_DEMO3
+                MENUITEM "2_WireBody Demo 4",               ID_2_WIRE_DEMO4
+            END
+			POPUP "1_Spline Demo"
+            BEGIN
+                MENUITEM "1_Spline Demo 1",             ID_1_SPLINE_DEMO1
+                MENUITEM "1_Spline Demo 2",             ID_1_SPLINE_DEMO2
+            END
+            POPUP "2_Spline Demo"
+            BEGIN
+                MENUITEM "2_Spline Demo 1",             ID_2_SPLINE_DEMO1
+            END
+            POPUP "Torus Body Demo"
+            BEGIN
+                MENUITEM "Torus_Body Demo1",		ID_MAKE_TORUS_DEMO1
+                MENUITEM "Torus_Body Demo2",		ID_MAKE_TORUS_DEMO2
+                MENUITEM "Torus_Body Demo3",		ID_MAKE_TORUS_DEMO3
+                MENUITEM "Torus_Body Demo4",		ID_MAKE_TORUS_DEMO4
+            END 
+            POPUP "3_Make Torus Demo" 
+            BEGIN 
+            MENUITEM "Make Torus Demo1",            ID_3_MAKE_TORUS_DEMO1 
+            MENUITEM "Make Torus Demo2",            ID_3_MAKE_TORUS_DEMO2 
+            MENUITEM "Make Torus Demo3",            ID_3_MAKE_TORUS_DEMO3 
+            MENUITEM "Make Torus Demo4",            ID_3_MAKE_TORUS_DEMO4 
+            END
+            POPUP "2_Make Torus Demo" 
+            BEGIN 
+            MENUITEM "Make Torus Demo1",            ID_2_MAKE_TORUS_DEMO1 
+            MENUITEM "Make Torus Demo2",            ID_2_MAKE_TORUS_DEMO2 
+            MENUITEM "Make Torus Demo3",            ID_2_MAKE_TORUS_DEMO3 
+            MENUITEM "Make Torus Demo4",            ID_2_MAKE_TORUS_DEMO4 
+            END
+            POPUP "Enclose Void Demo" 
+            BEGIN 
+            MENUITEM "Enclose Void Demo",            ID_ENCLOSE_VOID_DEMO
+            END
+            POPUP "1_Make Torus Demo"
+            BEGIN
+                MENUITEM "Make Torus Demo1",		ID_1_MAKE_TORUS_DEMO1
+                MENUITEM "Make Torus Demo2",		ID_1_MAKE_TORUS_DEMO2
+                MENUITEM "Make Torus Demo3",		ID_1_MAKE_TORUS_DEMO3
+                MENUITEM "Make Torus Demo4",		ID_1_MAKE_TORUS_DEMO4
+            END
+            POPUP "Reverse Body Demo"
+            BEGIN
+                MENUITEM "Reverse Body Demo1"       ID_REVERSE_BODY_DEMO1
+                MENUITEM "Reverse Body Demo2"       ID_REVERSE_BODY_DEMO2
+                MENUITEM "Reverse Body Demo3"       ID_REVERSE_BODY_DEMO3
+                MENUITEM "Reverse Body Demo4"       ID_REVERSE_BODY_DEMO4
+                MENUITEM "Reverse Body Demo5"       ID_REVERSE_BODY_DEMO5
+                MENUITEM "Reverse Body Demo6"       ID_REVERSE_BODY_DEMO6
+                MENUITEM "Reverse Body Demo7"       ID_REVERSE_BODY_DEMO7
+                MENUITEM "1_Reverse Body Demo1"       ID_1_REVERSE_BODY_DEMO1
+                MENUITEM "1_Reverse Body Demo2"       ID_1_REVERSE_BODY_DEMO2
+                MENUITEM "1_Reverse Body Demo3"       ID_1_REVERSE_BODY_DEMO3
+                MENUITEM "1_Reverse Body Demo4"       ID_1_REVERSE_BODY_DEMO4
+                MENUITEM "1_Reverse Body Demo5"       ID_1_REVERSE_BODY_DEMO5
+                MENUITEM "1_Reverse Body Demo6"       ID_1_REVERSE_BODY_DEMO6
+                MENUITEM "1_Reverse Body Demo7"       ID_1_REVERSE_BODY_DEMO7
+            END
+            POPUP "2_Wiggle Demo"
+            BEGIN
+                MENUITEM "2_Wiggle Demo1",                ID_2_WIGGLE_DEMO1
+                MENUITEM "2_Wiggle Demo2",                ID_2_WIGGLE_DEMO2
+                MENUITEM "2_Wiggle Demo3",                ID_2_WIGGLE_DEMO3
+            END
+        END
+        POPUP "Wire"
+        BEGIN
+            POPUP "Make Wire"
+            BEGIN
+                MENUITEM "Make Wire Demo1",                ID_MAKE_WIRE_DEMO1
+                MENUITEM "Make Wire Demo2",                ID_MAKE_WIRE_DEMO2
+                MENUITEM "Make Wire Demo3",                ID_MAKE_WIRE_DEMO3
+            END
+            POPUP "Reverse Wire"
+            BEGIN
+                MENUITEM "Reverse Wire Demo1",             ID_REVERSE_WIRE_DEMO1
+                MENUITEM "Reverse Wire Demo2",             ID_REVERSE_WIRE_DEMO2
+            END
+            POPUP "1_Reverse Wire"
+            BEGIN
+                MENUITEM "1_Reverse Wire Demo1",             ID_1_REVERSE_WIRE_DEMO1
+                MENUITEM "1_Reverse Wire Demo2",             ID_1_REVERSE_WIRE_DEMO2
+            END
+            POPUP "Orient Wire"
+            BEGIN
+                MENUITEM "Orient Wire Demo1",               ID_ORIENT_WIRE_DEMO1
+                MENUITEM "Orient Wire Demo2",               ID_ORIENT_WIRE_DEMO2
+                MENUITEM "Orient Wire Demo3",               ID_ORIENT_WIRE_DEMO3
+            END
+            POPUP "1_Orient Wire"
+            BEGIN
+                MENUITEM "1_Orient Wire Demo1",               ID_1_ORIENT_WIRE_DEMO1
+                MENUITEM "1_Orient Wire Demo2",               ID_1_ORIENT_WIRE_DEMO2
+                MENUITEM "1_Orient Wire Demo3",               ID_1_ORIENT_WIRE_DEMO3
+                MENUITEM "1_Orient Wire Demo4",               ID_1_ORIENT_WIRE_DEMO4
+            END
+            POPUP "Build Wire"
+            BEGIN
+                MENUITEM "Build Wire Demo1",                ID_BUILD_WIRE_DEMO1
+                MENUITEM "Build Wire Demo2",                ID_BUILD_WIRE_DEMO2
+                MENUITEM "Build Wire Demo3",                ID_BUILD_WIRE_DEMO3
+                MENUITEM "Build Wire Demo4",                ID_BUILD_WIRE_DEMO4
+            END
+            POPUP "1_Build Wire"
+            BEGIN
+                MENUITEM "1_Build Wire Demo1",                ID_1_BUILD_WIRE_DEMO1
+                MENUITEM "1_Build Wire Demo2",                ID_1_BUILD_WIRE_DEMO2
+            END
+            POPUP "MAKE EWIRE"
+            BEGIN
+                MENUITEM "Make EWire Demo1",                ID_MAKE_EWIRE_DEMO1
+                MENUITEM "Make EWire Demo2",                ID_MAKE_EWIRE_DEMO2
+            END
+        END
+        POPUP "Face/Surface"
+        BEGIN
+            MENUITEM "Torus",                       ID_FACE_TORUS
+            MENUITEM "Interpolate Spline Face",     ID_FACE_SPL_INTP
+            MENUITEM "Make By Faces",               ID_MK_BY_FACES_DEMO
+            MENUITEM "Face With Hole"               ID_LOOP_EXTERNAL
+            POPUP "Trface"
+            BEGIN
+                MENUITEM "Trface Demo1",        ID_TRFACE_DEMO1
+                MENUITEM "Trface Demo2",        ID_TRFACE_DEMO2
+                MENUITEM "Trface Demo3",        ID_TRFACE_DEMO3
+            END
+            POPUP "FitPlane1"
+            BEGIN
+                MENUITEM "FitPlane1 Demo1",         ID_FIT_PLANE1_DEMO1
+            END
+            POPUP "Spface"
+            BEGIN
+                MENUITEM "Spface Demo1",                ID_SPFACE_DEMO1
+                MENUITEM "Spface Demo2",                ID_SPFACE_DEMO2
+                MENUITEM "Spface Demo3",                ID_SPFACE_DEMO3
+                MENUITEM "Spface Demo4",                ID_SPFACE_DEMO4
+            END
+            POPUP "1_Spface"
+            BEGIN
+                MENUITEM "1_Spface Demo1",                ID_1_SPFACE_DEMO1
+                MENUITEM "1_Spface Demo2",                ID_1_SPFACE_DEMO2
+                MENUITEM "1_Spface Demo3",                ID_1_SPFACE_DEMO3
+                MENUITEM "1_Spface Demo4",                ID_1_SPFACE_DEMO4
+                MENUITEM "1_Spface Demo5",                ID_1_SPFACE_DEMO5
+            END
+            POPUP "Torus_1"
+            BEGIN
+                MENUITEM "Torus_face Demo1",                ID_1_FACE_TORUS_DEMO1
+            END
+            POPUP "Torus_2"
+            BEGIN
+                MENUITEM "Torus_face_2 Demo1",                ID_2_FACE_TORUS_DEMO1
+                MENUITEM "Torus_face_2 Demo2",                ID_2_FACE_TORUS_DEMO2
+                MENUITEM "Torus_face_2 Demo3",                ID_2_FACE_TORUS_DEMO3
+            END
+            POPUP "Face Law"
+            BEGIN
+                MENUITEM "Face Law Demo1",                ID_FACE_LAW_DEMO1
+                MENUITEM "Face Law Demo2",                ID_FACE_LAW_DEMO2
+                MENUITEM "Face Law Demo3",                ID_FACE_LAW_DEMO3
+            END
+            POPUP "Reverse Face"
+            BEGIN
+                MENUITEM "Reverse Face Demo1",          ID_REVERSE_FACE_DEMO1
+                MENUITEM "Reverse Face Demo2",          ID_REVERSE_FACE_DEMO2
+                MENUITEM "Reverse Face Demo3",          ID_REVERSE_FACE_DEMO3
+                MENUITEM "Reverse Face Demo4",          ID_REVERSE_FACE_DEMO4
+            END
+            POPUP "1_Make Trface"
+            BEGIN
+                MENUITEM "1_Make Trface Demo1",         ID_1_MAKE_TRFACE_DEMO1
+                MENUITEM "1_Make Trface Demo2",         ID_1_MAKE_TRFACE_DEMO2
+                MENUITEM "1_Make Trface Demo3",         ID_1_MAKE_TRFACE_DEMO3
+                MENUITEM "1_Make Trface Demo4",         ID_1_MAKE_TRFACE_DEMO4
+                MENUITEM "1_Make Trface Demo5",         ID_1_MAKE_TRFACE_DEMO5
+                MENUITEM "1_Make Trface Demo6",         ID_1_MAKE_TRFACE_DEMO6
+                MENUITEM "1_Make Trface Demo7",         ID_1_MAKE_TRFACE_DEMO7
+                MENUITEM "1_Make Trface Demo8",         ID_1_MAKE_TRFACE_DEMO8
+                MENUITEM "1_Make Trface Demo9",         ID_1_MAKE_TRFACE_DEMO9
+                MENUITEM "1_Make Trface Demo10",        ID_1_MAKE_TRFACE_DEMO10
+                MENUITEM "1_Make Trface Demo11",        ID_1_MAKE_TRFACE_DEMO11
+                MENUITEM "1_Make Trface Demo12",        ID_1_MAKE_TRFACE_DEMO12
+                MENUITEM "1_Make Trface Demo13",        ID_1_MAKE_TRFACE_DEMO13
+                MENUITEM "1_Make Trface Demo14",        ID_1_MAKE_TRFACE_DEMO14
+                MENUITEM "1_Make Trface Demo15",        ID_1_MAKE_TRFACE_DEMO15
+                MENUITEM "1_Make Trface Demo16",        ID_1_MAKE_TRFACE_DEMO16
+                MENUITEM "1_Make Trface Demo17",        ID_1_MAKE_TRFACE_DEMO17
+                MENUITEM "1_Make Trface Demo18",        ID_1_MAKE_TRFACE_DEMO18
+                MENUITEM "1_Make Trface Demo19",        ID_1_MAKE_TRFACE_DEMO19
+            END
+            POPUP "Find Face"
+            BEGIN
+                MENUITEM "Find Face Demo1",             ID_FIND_FACE_DEMO1
+                MENUITEM "Find Face Demo2",             ID_FIND_FACE_DEMO2
+                MENUITEM "Find Face Demo3",             ID_FIND_FACE_DEMO3
+                MENUITEM "Find Face Demo4",             ID_FIND_FACE_DEMO4
+            END
+            POPUP "Make Trface_2"
+            BEGIN
+                MENUITEM "Make Trface_2 Demo1",             ID_2_MAKE_TRFACE_DEMO1
+                MENUITEM "Make Trface_2 Demo2",             ID_2_MAKE_TRFACE_DEMO2
+            END
+            POPUP "Conic Face"
+            BEGIN
+                MENUITEM "Ellipse Trough Demo1",                ID_FACE_CONIC_ELLI_DEMO1
+                MENUITEM "Ellipse Trough Demo2",                ID_FACE_CONIC_ELLI_DEMO2
+                MENUITEM "Parabola Trough Demo3",               ID_FACE_CONIC_PARA_DEMO3
+                MENUITEM "Hyperbola Trough Demo4",              ID_FACE_CONIC_HYPER_DEMO4
+                MENUITEM "Ellipse Dish Demo5",                  ID_FACE_CONIC_ELLI_DISH_DEMO5
+                MENUITEM "Parabola Dish Demo6",                 ID_FACE_CONIC_PARA_DISH_DEMO6
+                MENUITEM "Hyperbola Dish Demo7",                ID_FACE_CONIC_HYPER_DISH_DEMO7
+            END
+            POPUP "Face Spline Ctrlpts"
+            BEGIN
+                MENUITEM "Spline Ctrlpts Demo1",          ID_FACE_SPL_CTRLPTS_DEMO1
+                MENUITEM "Spline Ctrlpts Demo2",          ID_FACE_SPL_CTRLPTS_DEMO2
+                MENUITEM "Spline Ctrlpts Demo3",          ID_FACE_SPL_CTRLPTS_DEMO3
+                MENUITEM "1_Spline Ctrlpts Demo1",          ID_1_FACE_SPL_CTRLPTS_DEMO1
+                MENUITEM "1_Spline Ctrlpts Demo2",          ID_1_FACE_SPL_CTRLPTS_DEMO2
+                MENUITEM "1_Spline Ctrlpts Demo3",          ID_1_FACE_SPL_CTRLPTS_DEMO3
+            END
+            POPUP "Approx Surface"
+            BEGIN
+                MENUITEM "Approx Surface Demo1",         ID_APPROX_SURFACE_DEMO1
+                MENUITEM "Approx Surface Demo2",         ID_APPROX_SURFACE_DEMO2
+                MENUITEM "Approx Surface Demo3",         ID_APPROX_SURFACE_DEMO3
+                MENUITEM "Approx Surface Demo4",         ID_APPROX_SURFACE_DEMO4
+                MENUITEM "Approx Surface Demo5",         ID_APPROX_SURFACE_DEMO5
+            END
+        END
+        POPUP "Edge/Curve"
+        BEGIN
+            MENUITEM "Fit Line",                    ID_FIT_LINE_DEMO
+            MENUITEM "Fit Plane",                   ID_FIT_PLANE_DEMO
+            MENUITEM "Edge Cubic",                  ID_EDGE_CUBIC
+            POPUP "Spring Demo"
+            BEGIN
+                MENUITEM "Spring Demo1",                ID_SPRING_DEMO1
+                MENUITEM "Spring Demo2",                ID_SPRING_DEMO2
+                MENUITEM "Spring Demo3",                ID_SPRING_DEMO3
+                MENUITEM "Spring Demo4",                ID_SPRING_DEMO4
+                MENUITEM "Spring Demo5",                ID_SPRING_DEMO5
+            END
+            POPUP "Spring Law Demo"
+            BEGIN
+                MENUITEM "Spring Law Demo1",                ID_SPRING_LAW_DEMO1
+                MENUITEM "Spring Law Demo2",                ID_SPRING_LAW_DEMO2
+                MENUITEM "Spring Law Demo3",                ID_SPRING_LAW_DEMO3
+            END  
+            POPUP "Spring Taper Demo"
+            BEGIN
+                MENUITEM "Spring Taper Demo1",                ID_SPRING_TAPER_DEMO1
+                MENUITEM "Spring Taper Demo2",                ID_SPRING_TAPER_DEMO2
+                MENUITEM "Spring Taper Demo3",                ID_SPRING_TAPER_DEMO3
+                MENUITEM "Spring Taper Demo4",                ID_SPRING_TAPER_DEMO4
+                MENUITEM "Spring Taper Demo5",                ID_SPRING_TAPER_DEMO5
+                MENUITEM "Spring Taper Demo6",                ID_SPRING_TAPER_DEMO6
+            END
+            MENUITEM "Modify Line Demo",            ID_MODIFY_LINE_DEMO
+            POPUP "Spiral Demo"
+            BEGIN
+                MENUITEM "Spiral Demo1",                ID_SPIRAL_DEMO1
+                MENUITEM "Spiral Demo2",                ID_SPIRAL_DEMO2
+            END
+            POPUP "Curve Arc Center Edge Demo" 
+            BEGIN
+                MENUITEM "Curve Arc Center Edge Demo1",     ID_CURVE_ARC_CENTER_EDGE_DEMO1
+                MENUITEM "Curve Arc Center Edge Demo2",     ID_CURVE_ARC_CENTER_EDGE_DEMO2
+                MENUITEM "Curve Arc Center Edge Demo3",     ID_CURVE_ARC_CENTER_EDGE_DEMO3
+            END
+            POPUP "Curve Arc Diagonal Demo"
+            BEGIN 
+                MENUITEM "Curve Arc Diagonal Demo1",        ID_ARC_DIAGONAL_DEMO1 
+                MENUITEM "Curve Arc Diagonal Demo2",        ID_ARC_DIAGONAL_DEMO2 
+                MENUITEM "Curve Arc Diagonal Demo3",        ID_ARC_DIAGONAL_DEMO3 
+                MENUITEM "Curve Arc Diagonal Demo4",        ID_ARC_DIAGONAL_DEMO4 
+            END
+            POPUP "Curve Law Demo"
+            BEGIN
+                MENUITEM "Curve Law Demo1",                ID_CURVE_LAW_DEMO1
+                MENUITEM "Curve Law Demo2",                ID_CURVE_LAW_DEMO2
+            END
+            POPUP "1_Spiral Demo"
+            BEGIN
+                MENUITEM "1_Spiral Demo1",                ID_1_EDGE_SPIRAL_DEMO1
+                MENUITEM "1_Spiral Demo2",                ID_1_EDGE_SPIRAL_DEMO2
+            END
+            POPUP "1_Trans_Edge Demo"
+            BEGIN
+                MENUITEM "1_Trans_Edge Demo1",                ID_1_Trans_Edge_DEMO1
+                MENUITEM "1_Trans_Edge Demo2",                ID_1_Trans_Edge_DEMO2
+            END
+            POPUP "2_Spiral  Demo"
+            BEGIN
+                MENUITEM "2_Spiral Demo1",                ID_2_EDGE_SPIRAL_DEMO1
+                MENUITEM "2_Spiral Demo2",                ID_2_EDGE_SPIRAL_DEMO2
+            END 
+            MENUITEM "Ed_Line Demo",                ID_ED_LINE_DEMO
+            MENUITEM "Mk_ed_Line Demo",             ID_MK_ED_LINE_DEMO
+            MENUITEM "2_Mk_ed_Line Demo",             ID_2_MK_ED_LINE_DEMO
+            MENUITEM "Split edge at disc",              ID_SPLIT_EDGE_AT_DISC
+            MENUITEM "Make conic",                      ID_MK_ED_CONIC
+            MENUITEM "Make Conic Demo2",                ID_MK_ED_CONIC_DEMO2
+			POPUP "Curve Spline2 Demo"
+            BEGIN
+                MENUITEM "Curve Spline2 Demo 1",             ID_CURVE_SPLINE2_DEMO1
+                MENUITEM "Curve Spline2 Demo 2",             ID_CURVE_SPLINE2_DEMO2
+                MENUITEM "Curve Spline2 Demo 3",             ID_CURVE_SPLINE2_DEMO3
+                MENUITEM "Curve Spline2 Demo 4",             ID_CURVE_SPLINE2_DEMO4
+            END
+			POPUP "1_Curve Spline2 Demo"
+            BEGIN
+                MENUITEM "1_Curve Spline2 Demo 1",             ID_1_CURVE_SPLINE2_DEMO1
+                MENUITEM "1_Curve Spline2 Demo 2",             ID_1_CURVE_SPLINE2_DEMO2
+                MENUITEM "1_Curve Spline2 Demo 3",             ID_1_CURVE_SPLINE2_DEMO3
+                MENUITEM "1_Curve Spline2 Demo 4",             ID_1_CURVE_SPLINE2_DEMO4
+                MENUITEM "1_Curve Spline2 Demo 5",             ID_1_CURVE_SPLINE2_DEMO5
+                MENUITEM "1_Curve Spline2 Demo 6",             ID_1_CURVE_SPLINE2_DEMO6
+            END
+            POPUP "spring_1 Demo"
+            BEGIN
+                MENUITEM "Spring 1 Demo1",                ID_1_SPRING_DEMO1
+                MENUITEM "Spring 1 Demo2",                ID_1_SPRING_DEMO2
+            END
+
+            POPUP "Edge Law"
+            BEGIN
+                MENUITEM "Edge Law Demo1",                ID_EDGE_LAW_DEMO1
+                MENUITEM "Edge Law Demo2",                ID_EDGE_LAW_DEMO2
+                MENUITEM "Edge Law Demo3",                ID_EDGE_LAW_DEMO3
+            END
+            POPUP "Trim Middle Demo"
+            BEGIN
+                MENUITEM "Trim Middle Demo 1",             ID_TRIM_MIDDLE_DEMO1
+                MENUITEM "Trim Middle Demo 2",             ID_TRIM_MIDDLE_DEMO2
+                MENUITEM "Trim Middle Demo 3",             ID_TRIM_MIDDLE_DEMO3
+                MENUITEM "Trim Middle Demo 4",             ID_TRIM_MIDDLE_DEMO4
+                MENUITEM "Trim Middle Demo 5",             ID_TRIM_MIDDLE_DEMO5
+            END
+
+            POPUP "Trans Edge Demo"
+            BEGIN
+                MENUITEM "Trans Edge Demo 1",             ID_TRANS_EDGE_DEMO1
+                MENUITEM "Trans Edge Demo 2",             ID_TRANS_EDGE_DEMO2
+            END
+            POPUP "Curve Bezier Demo"
+            BEGIN
+                MENUITEM "Curve Bezier Demo1",                ID_CURVE_BEZIER_DEMO1
+                MENUITEM "Curve Bezier Demo2",                ID_CURVE_BEZIER_DEMO2
+                MENUITEM "Curve Bezier Demo3",                ID_CURVE_BEZIER_DEMO3
+            END
+
+        END
+        POPUP "SPD Entity"
+        BEGIN
+            MENUITEM "HD_PEL_ENT98",                ID_SPD_ENT98
+			POPUP "HD_PEL_ENT6"
+            BEGIN
+                MENUITEM "HD_PEL_ENT6 Demo1",           ID_HD_PEL_ENT6_DEMO1
+                MENUITEM "HD_PEL_ENT6 Demo2",           ID_HD_PEL_ENT6_DEMO2
+                MENUITEM "HD_PEL_ENT6 Demo3",           ID_HD_PEL_ENT6_DEMO3
+                MENUITEM "HD_PEL_ENT6 Demo4",           ID_HD_PEL_ENT6_DEMO4
+            END
+            POPUP "HD_PEL_ENT7"
+            BEGIN
+                MENUITEM "HD_PEL_ENT7 Demo1",           ID_HD_PEL_ENT7_DEMO1
+                MENUITEM "HD_PEL_ENT7 Demo2",           ID_HD_PEL_ENT7_DEMO2
+                MENUITEM "HD_PEL_ENT7 Demo3",           ID_HD_PEL_ENT7_DEMO3
+                MENUITEM "HD_PEL_ENT7 Demo4",           ID_HD_PEL_ENT7_DEMO4
+                MENUITEM "HD_PEL_ENT7 Demo5",           ID_HD_PEL_ENT7_DEMO5
+                MENUITEM "HD_PEL_ENT7 Demo6",           ID_HD_PEL_ENT7_DEMO6
+                MENUITEM "HD_PEL_ENT7 Demo7",           ID_HD_PEL_ENT7_DEMO7
+                MENUITEM "HD_PEL_ENT7 Demo8",           ID_HD_PEL_ENT7_DEMO8
+            END
+            POPUP "HD_PEL_ENT8"
+            BEGIN
+                MENUITEM "HD_PEL_ENT8 Demo1",           ID_HD_PEL_ENT8_DEMO1
+                MENUITEM "HD_PEL_ENT8 Demo2",           ID_HD_PEL_ENT8_DEMO2
+            END
+            POPUP "HD_PEL_ENT10"
+            BEGIN
+                MENUITEM "HD_PEL_ENT10 Demo1",          ID_HD_PEL_ENT10_DEMO1
+                MENUITEM "HD_PEL_ENT10 Demo2",          ID_HD_PEL_ENT10_DEMO2
+            END
+            MENUITEM "HD_PEL_ENT2",                 ID_HD_PEL_ENT2_DEMO
+            MENUITEM "HD_PEL_ENT1",                 ID_HD_PEL_ENT1_DEMO
+            POPUP "HD_PEL_ENT11"
+            BEGIN
+                MENUITEM "HD_PEL_ENT11 Demo1",          ID_HD_PEL_ENT11_DEMO1
+                MENUITEM "HD_PEL_ENT11 Demo2",          ID_HD_PEL_ENT11_DEMO2
+                MENUITEM "HD_PEL_ENT11 Demo3",          ID_HD_PEL_ENT11_DEMO3
+                MENUITEM "HD_PEL_ENT11 Demo4",          ID_HD_PEL_ENT11_DEMO4
+                MENUITEM "HD_PEL_ENT11 Demo5",          ID_HD_PEL_ENT11_DEMO5
+                MENUITEM "HD_PEL_ENT11 Demo6",          ID_HD_PEL_ENT11_DEMO6
+            END
+            MENUITEM "HD_PEL_ENT13",                 ID_HD_PEL_ENT13_DEMO
+            POPUP "HD_PEL_ENT99"
+            BEGIN
+                MENUITEM "HD_PEL_ENT99 Demo1",          ID_HD_PEL_ENT99_DEMO1
+                MENUITEM "HD_PEL_ENT99 Demo2",          ID_HD_PEL_ENT99_DEMO2
+                MENUITEM "HD_PEL_ENT99 Demo3",          ID_HD_PEL_ENT99_DEMO3
+            END
+        END
+    END
+    POPUP "S&ystem"
+    BEGIN
+        MENUITEM "MT_&Slice",                   ID_MULTI_SLICE
+        MENUITEM "Process MT API",              ID_PROCESS_MT_API
+        MENUITEM "MT Work Packet Queue",        ID_MT_WORK_PACKET_QUEUE
+    END
+    POPUP "&Blending"
+    BEGIN
+        MENUITEM "Constant Radius",             ID_WIGGLE_CONSTRADIUS
+        POPUP "Variable Radius"
+        BEGIN
+            MENUITEM "Wiggle",                      ID_WIGGLE_VARIABLERADIUS
+            MENUITEM "Holdline",                    ID_BLENDING_HOLDLINE
+            MENUITEM "Elliptical",                  ID_BLENDING_ELLIPTICAL
+            MENUITEM "Blend Radius &Transition",    ID_BLEND_BLEND_RADIUS_TRANSITION
+            MENUITEM "Grip",                        ID_BLENDING_GRIP
+        END
+        POPUP "Chamfer"
+        BEGIN
+            MENUITEM "Pencil",                      ID_BLENDING_PENCIL
+            MENUITEM "Spline Chamfer",              ID_BLENDING_SPLINECHAMFER
+            MENUITEM "Twisted Bar",                 ID_BLENDING_TWISTEDBAR
+        END
+        POPUP "Entity-Entity"
+        BEGIN
+            MENUITEM "Wine Glass",                  ID_BLENDING_WINEGLASS
+            MENUITEM "Number Nine",                 ID_BLENDING_NUMBERNINE
+        END
+        MENUITEM "Annotations",                 ID_BLENDING_ANNOTATIONS
+        POPUP "Vertex Blends"
+        BEGIN
+            MENUITEM "Dice",                        ID_BLENDING_DICE
+            MENUITEM "British Dice",                ID_BLENDING_BRITISHDICE
+        END
+        POPUP "End Processing"
+        BEGIN
+            MENUITEM "Blend Mitre and Cap",         ID_BLENDING_BLENDMITREANDCAP
+            MENUITEM "Clown Hat",                   ID_BLENDING_CLOWNHAT
+        END
+    END
+    POPUP "Model &Editing"
+    BEGIN
+        POPUP "&LOPS"
+        BEGIN
+            POPUP "Taper"
+            BEGIN
+                POPUP "Edge Taper"
+                BEGIN
+                    MENUITEM "Example 1",                   ID_LOP_TAPER_FACES1
+                    MENUITEM "Example 2",                   ID_LOP_TAPER_FACES2
+                END
+                MENUITEM "Plane Taper",                 ID_LOP_TAPER_FACES3
+            END
+            POPUP "Move"
+            BEGIN
+                MENUITEM "Translate",                   ID_MOVE_MOVEFACES
+                MENUITEM "Rotate",                      ID_MOVE_ROTATEFACES
+            END
+            POPUP "Offset"
+            BEGIN
+                MENUITEM "Offset - Faces",              ID_OFFSET_OFFSETFACES
+                MENUITEM "Offset - Body",               ID_OFFSET_OFFSETBODY1
+            END
+        END
+    END
+    POPUP "&Modeling Operations"
+    BEGIN
+        POPUP "&Boolean"
+        BEGIN
+            POPUP "&Basic"
+            BEGIN
+                MENUITEM "&Unite",                      ID_BOOLEAN_UNITE
+                MENUITEM "&Intersection",               ID_BOOLEAN_INTERSECTION
+                MENUITEM "&Subtraction",                ID_BOOLEAN_SUBTRACTION
+                MENUITEM "&Chop",                       ID_BOOLEAN_CHOP
+            END
+            POPUP "&Project"
+            BEGIN
+                MENUITEM "Project &Wire to Body",       ID_BOOLEAN_PROJECTWIRETOBODY
+                MENUITEM "Project &Edge to Face",       ID_BOOLEAN_PROJECTEDGETOFACE
+            END
+            POPUP "&Subdivide"
+            BEGIN
+                MENUITEM "&Face Subdivide",             ID_BOOLEAN_FACESUBDIVIDE
+                MENUITEM "&Split Wire Edge",            ID_BOOLEAN_SPLITWIREEDGE
+            END
+            POPUP "&High Level"
+            BEGIN
+                MENUITEM "&Make Shadow",                ID_BOOLEAN_MAKESHADOW
+            END
+        END
+        POPUP "S&titch"
+        BEGIN
+            MENUITEM "&MT STitch",                  ID_STITCH_MTSTITCH
+        END
+        POPUP "&Incremental Operations"
+        BEGIN
+            MENUITEM "Incremental Booleans",        ID_HLC_INCR_BOOL
+        END
+        POPUP "&Constructors"
+        BEGIN
+            MENUITEM "&Text_From_Wire_Hello",       ID_CONSTRUCTORS_TEXT_HELLO
+        END
+    END
+    POPUP "&Surfacing"
+    BEGIN
+        POPUP "&Sweep"
+        BEGIN
+            MENUITEM "Sweep A&bstract Art",         ID_SWEEP_SWEEPABSTRACTART
+            MENUITEM "Sweep Angled Polygon",        ID_SWEEP_SWEEPANGLEDPOLYGON
+            MENUITEM "Sweep &Apple Peal",           ID_SWEEP_SWEEP_APPLEPEAL
+            MENUITEM "Sweep Arch",                  ID_SWEEP_SWEEPARCH
+            MENUITEM "Sweep Deformed &Tubing",      ID_SWEEP_SWEEP_DEFORMEDTUBING
+            MENUITEM "Sweep De&gen Draft Box",      ID_SWEEP_SWEEP_DEGENDRAFTBOX
+            MENUITEM "Sweep Drafted Box1",          ID_SWEEP_SWEEPDRAFTEDBOX1
+            MENUITEM "Sweep Drafted Box2",          ID_SWEEP_SWEEPDRAFTEDBOX2
+            MENUITEM "Sweep Drafted Box &Cyl",      ID_SWEEP_SWEEP_DRAFTEDBOXCYL
+            MENUITEM "Sweep Drafted Bo&x with Hole", ID_SWEEP_SWEEP_DRAFTEDBOXWITHHOLE
+            MENUITEM "Sweep Drafted &Cone1",        ID_SWEEP_SWEEP_DRAFTEDCONE1
+            MENUITEM "Sweep Drafted Cone2",         ID_SWEEP_SWEEPDRAFTEDCONE2
+            MENUITEM "Sweep Drafted Polygon1",      ID_SWEEP_SWEEP_DRAFTEDPOLYGON1
+            MENUITEM "Sweep Drafted Polygon2",      ID_SWEEP_SWEEPDRAFTEDPOLYGON2
+            MENUITEM "Sweep Drafted Tube",          ID_SWEEP_SWEEPDRAFTEDTUBE
+            MENUITEM "Sweep &Fin",                  ID_SWEEP_SWEEPFIN
+            MENUITEM "Sweep &Heart",                ID_SWEEP_SWEEP_HEART
+            MENUITEM "Sweep Pipe Thru E &Block",    ID_SWEEP_SWEEP_PIPE_THRU
+            MENUITEM "Sweep &Pipe Thru Slotted Block", ID_SWEEP_SWEEP_PIPETHRUSLOTTEDBLOCK
+            MENUITEM "Sweep Rigid P&ipe",           ID_SWEEP_SWEEPRIGIDPIPE
+            MENUITEM "Sweep Ri&gid Pipe Shaft",     ID_SWEEP_SWEEPRIGIDPIPESHAFT
+            MENUITEM "Sweep Rigid T&ube1",          ID_SWEEP_SWEEP_RIGIDTUBE1
+            MENUITEM "Sweep Rigid Tube&2",          ID_SWEEP_SWEEP_RIGIDTUBE2
+            MENUITEM "Sweep Sha&ft",                ID_SWEEP_SWEEPSHAFT
+            MENUITEM "Sweep Torus Thru &E Block",   ID_SWEEP_SWEEP_TORUSTHRUEBLOCK
+            MENUITEM "Sweep T&wisted Tube",         ID_SWEEP_SWEEPTWISTEDTUBE
+            MENUITEM "Sweep UF&O1",                 ID_SWEEP_SWEEP_UFO1
+            MENUITEM "Sweep UFO2",                  ID_SWEEP_SWEEPUFO2
+            MENUITEM "Sweep &Wedge",                ID_SWEEP_SWEEP_WEDGE
+        END
+        POPUP "S&kin"
+        BEGIN
+            MENUITEM "Skin &Yo Yo",                 ID_SKIN_SKIN_YO_YO
+            MENUITEM "Star Seed1",                  ID_SKIN_STARSEED1
+            MENUITEM "Star Seed 2",                 ID_SKIN_STARSEED2
+            MENUITEM "Start Drum",                  ID_SKIN_STARTDRUM
+            MENUITEM "Seed Pod",                    ID_SKIN_SEEDPOD
+            MENUITEM "Top",                         ID_SKIN_TOP
+            MENUITEM "Bottle",                      ID_SKIN_BOTTLE
+            MENUITEM "Vase",                        ID_SKIN_VASE
+            MENUITEM "Worm",                        ID_SKIN_WORM
+            MENUITEM "Nose Star",                   ID_SKIN_NOSESTAR
+            MENUITEM "Curved Star Body",            ID_SKIN_CURVEDSTARBO
+            MENUITEM "Bad Stirrup",                 ID_SKIN_BADSTIRRUP
+            MENUITEM "Good Stirrup",                ID_SKIN_GOODSTIRRUP
+            MENUITEM "Lense Body",                  ID_SKIN_LENSEBODY
+            MENUITEM "Balloon",                     ID_SKIN_BALLOON
+            MENUITEM "Twisted Star Seed",           ID_SKIN_TWISTEDSTARSEED
+            MENUITEM "Baloon on Cylindrical Face 1", ID_SKIN_BALOONONCYLINDRICALFACE1
+            MENUITEM "Baloon on Cylindrical Face 2", ID_SKIN_BALOONONCYLINDRICALFACE2
+            MENUITEM "Robot Tooth",                 ID_SKIN_ROBOTTOOTH
+            MENUITEM "Bad Square egg",              ID_SKIN_BADSQUAREEGG
+            MENUITEM "Good Square Egg",             ID_SKIN_GOODSQUAREEGG
+            MENUITEM "Dented Doughnut",             ID_SKIN_DENTEDDOUGHNUT
+            MENUITEM "Flower",                      ID_SKIN_FLOWER
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ACIS_WIN ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ACIS_Win"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ACIS_Win, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2015",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "ACIS_Win"
+    IDC_ACIS_WIN            "ACIS_WIN"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

@@ -1,0 +1,60 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_ERRORBASE_ERRMOD_INCLUDED
+#define SPAACISDS_ERRORBASE_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_errorbase_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_errorbase_errmod;
+
+#endif
+#define MATH_DOMAIN spaacisds_errorbase_errmod.message_code(0)
+#define MATH_SING spaacisds_errorbase_errmod.message_code(1)
+#define MATH_OVERFLOW spaacisds_errorbase_errmod.message_code(2)
+#define MATH_UNDERFLOW spaacisds_errorbase_errmod.message_code(3)
+#define MATH_TLOSS spaacisds_errorbase_errmod.message_code(4)
+#define MATH_PLOSS spaacisds_errorbase_errmod.message_code(5)
+#define MATH_ERROR spaacisds_errorbase_errmod.message_code(6)
+#define NULL_STRING spaacisds_errorbase_errmod.message_code(7)
+#define PURE_VIRTUAL spaacisds_errorbase_errmod.message_code(8)
+#define SIGAPOL_FAULT spaacisds_errorbase_errmod.message_code(9)
+#define SIGBUS_FAULT spaacisds_errorbase_errmod.message_code(10)
+#define SIGFPE_FAULT spaacisds_errorbase_errmod.message_code(11)
+#define SIGINT_FAULT spaacisds_errorbase_errmod.message_code(12)
+#define SIGSEGV_FAULT spaacisds_errorbase_errmod.message_code(13)
+#define SIGSOFT_FAULT spaacisds_errorbase_errmod.message_code(14)
+#define ACIS_EXCEPTION_ACCESS_VIOLATION spaacisds_errorbase_errmod.message_code(15)
+#define ACIS_EXCEPTION_DATATYPE_MISALIGNMENT spaacisds_errorbase_errmod.message_code(16)
+#define ACIS_EXCEPTION_BREAKPOINT spaacisds_errorbase_errmod.message_code(17)
+#define ACIS_EXCEPTION_SINGLE_STEP spaacisds_errorbase_errmod.message_code(18)
+#define ACIS_EXCEPTION_ARRAY_BOUNDS_EXCEEDED spaacisds_errorbase_errmod.message_code(19)
+#define ACIS_EXCEPTION_FLT_DENORMAL_OPERAND spaacisds_errorbase_errmod.message_code(20)
+#define ACIS_EXCEPTION_FLT_DIVIDE_BY_ZERO spaacisds_errorbase_errmod.message_code(21)
+#define ACIS_EXCEPTION_FLT_INEXACT_RESULT spaacisds_errorbase_errmod.message_code(22)
+#define ACIS_EXCEPTION_FLT_INVALID_OPERATION spaacisds_errorbase_errmod.message_code(23)
+#define ACIS_EXCEPTION_FLT_OVERFLOW spaacisds_errorbase_errmod.message_code(24)
+#define ACIS_EXCEPTION_FLT_STACK_CHECK spaacisds_errorbase_errmod.message_code(25)
+#define ACIS_EXCEPTION_FLT_UNDERFLOW spaacisds_errorbase_errmod.message_code(26)
+#define ACIS_EXCEPTION_INT_DIVIDE_BY_ZERO spaacisds_errorbase_errmod.message_code(27)
+#define ACIS_EXCEPTION_INT_OVERFLOW spaacisds_errorbase_errmod.message_code(28)
+#define ACIS_EXCEPTION_PRIV_INSTRUCTION spaacisds_errorbase_errmod.message_code(29)
+#define ACIS_EXCEPTION_IN_PAGE_ERROR spaacisds_errorbase_errmod.message_code(30)
+#define ACIS_CONTROL_C_EXIT spaacisds_errorbase_errmod.message_code(31)
+#define UNEXPECTED_EXCEPTION spaacisds_errorbase_errmod.message_code(32)
+#define FPU_RESET_FAULT spaacisds_errorbase_errmod.message_code(33)
+#define ACIS_FPU_FAULT spaacisds_errorbase_errmod.message_code(34)
+#define TEST_FPU_SET_FAULT spaacisds_errorbase_errmod.message_code(35)
+#define TEST_FPU_RESET_FAULT spaacisds_errorbase_errmod.message_code(36)
+#define ACIS_FPU_FAULT_TEST spaacisds_errorbase_errmod.message_code(37)
+#define ACIS_EXCEPTION_HANDLING_FAULT spaacisds_errorbase_errmod.message_code(38)
+#define STACK_UNWINDING_FAULT spaacisds_errorbase_errmod.message_code(39)
+#define SIGNAL_HANDLERS_FAULT spaacisds_errorbase_errmod.message_code(40)
+#define SIGNAL_FLAGS_FAULT spaacisds_errorbase_errmod.message_code(41)
+
+#endif /* SPAACISDS_ERRORBASE_ERRMOD_INCLUDED */

@@ -1,0 +1,119 @@
+3200 0 1 0           
+15 acis_api_access 14 ACIS 34.0.1 NT 24 Thu Aug  8 15:24:01 2024 
+1 9.9999999999999995e-07 1e-10 
+T @77 TKECGXHVYG5D7QQD8ESXQ2XA87PVMCP3_A25VEQEYAQ3KGQA7C64GCPB3DKMEJQ239S3QRP4FA94R 
+-0 body $-1 -1 -1 $-1 0 $1 $-1 $-1 F #
+-1 lump $-1 -1 -1 $-1 $-1 $2 $0 F #
+-2 shell $-1 -1 -1 $-1 $-1 $-1 $3 $-1 $1 F #
+-3 face $4 -1 -1 $-1 $-1 $5 $2 $-1 $6 forward single F F #
+-4 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $3 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $7 #
+-5 loop $-1 -1 -1 $-1 $-1 $8 $3 F unknown #
+-6 plane-surface $-1 -1 -1 $-1 1 1 1 0.70710678118654746 0.61237243569579447 0.35355339059327373 0.44721359549995793 0 -0.89442719099991586 forward_v I I I I #
+-7 copy_annotation-annotation $-1 -1 hooked $3 $9 #
+-8 coedge $10 -1 -1 $-1 $11 $12 $-1 $13 forward $5 $-1 #
+-9 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $14 #
+-10 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $8 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $15 #
+-11 coedge $16 -1 -1 $-1 $17 $8 $-1 $18 forward $5 $-1 #
+-12 coedge $19 -1 -1 $-1 $8 $17 $-1 $20 forward $5 $-1 #
+-13 edge $21 -1 -1 $-1 $22 1 $23 0 $8 $24 forward @7 unknown F #
+-14 face $25 -1 -1 $-1 $-1 $26 $-1 $-1 $27 forward single F F #
+-15 copy_annotation-annotation $-1 -1 hooked $8 $28 #
+-16 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $11 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $29 #
+-17 coedge $30 -1 -1 $-1 $12 $11 $-1 $31 forward $5 $-1 #
+-18 edge $32 -1 -1 $-1 $23 1 $33 0 $11 $34 forward @7 unknown F #
+-19 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $12 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $35 #
+-20 edge $36 -1 -1 $-1 $37 1 $22 0 $12 $38 forward @7 unknown F #
+-21 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $13 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $39 #
+-22 vertex $40 -1 -1 $-1 $13 $41 #
+-23 vertex $42 -1 -1 $-1 $13 $43 #
+-24 straight-curve $-1 -1 -1 $-1 1 1.5 0.1339745962155614 5.5511151231257839e-17 0.50000000000000011 -0.86602540378443871 I I #
+-25 attrib_annotation-sys-attrib $-1 -1 $44 $-1 $14 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $7 #
+-26 loop $-1 -1 -1 $-1 $-1 $45 $14 F unknown #
+-27 plane-surface $-1 -1 -1 $-1 1 1 1 0.70710678118654746 0.61237243569579447 0.35355339059327373 0.44721359549995793 0 -0.89442719099991586 forward_v I I I I #
+-28 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $45 #
+-29 copy_annotation-annotation $-1 -1 hooked $11 $46 #
+-30 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $17 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $47 #
+-31 edge $48 -1 -1 $-1 $33 1 $37 0 $17 $49 forward @7 unknown F #
+-32 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $18 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $50 #
+-33 vertex $51 -1 -1 $-1 $18 $52 #
+-34 ellipse-curve $-1 -1 -1 $-1 0.2928932188134527 3.5533554413208472 -2.0083277917770643 0.70710678118654746 0.61237243569579447 0.35355339059327373 0.70710678118654768 -0.053355441320847241 -1.3217992271451284 1 I I #
+-35 copy_annotation-annotation $-1 -1 hooked $12 $53 #
+-36 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $20 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $54 #
+-37 vertex $55 -1 -1 $-1 $31 $56 #
+-38 ellipse-curve $-1 -1 -1 $-1 0.29289321881345259 2.6713894300707421 -0.48071784974301934 0.70710678118654746 0.61237243569579447 0.35355339059327373 -0.70710678118654746 0.053355441320846797 1.3217992271451282 1 I I #
+-39 copy_annotation-annotation $-1 -1 hooked $13 $57 #
+-40 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $22 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $58 #
+-41 point $-1 -1 -1 $-1 1 1.5 0.1339745962155614 #
+-42 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $23 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $59 #
+-43 point $-1 -1 -1 $-1 1.0000000000000002 3.5 -3.3301270189221928 #
+-44 tag-sys-attrib $-1 -1 $-1 $25 $14 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $14 #
+-45 coedge $60 -1 -1 $-1 $61 $62 $-1 $63 forward $26 $-1 #
+-46 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $61 #
+-47 copy_annotation-annotation $-1 -1 hooked $17 $64 #
+-48 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $31 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $65 #
+-49 straight-curve $-1 -1 -1 $-1 -0.4142135623730947 4.7247448713915894 -2.6230202377356453 -5.5511151231257827e-17 -0.50000000000000011 0.8660254037844386 I I #
+-50 copy_annotation-annotation $-1 -1 hooked $18 $66 #
+-51 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $33 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $67 #
+-52 point $-1 -1 -1 $-1 -0.41421356237309448 4.7247448713915894 -2.6230202377356457 #
+-53 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $62 #
+-54 copy_annotation-annotation $-1 -1 hooked $20 $68 #
+-55 attrib_annotation-sys-attrib $-1 -1 $-1 $-1 $37 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $69 #
+-56 point $-1 -1 -1 $-1 -0.41421356237309492 2.7247448713915889 0.84108137740210887 #
+-57 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $63 #
+-58 copy_annotation-annotation $-1 -1 hooked $22 $70 #
+-59 copy_annotation-annotation $-1 -1 hooked $23 $71 #
+-60 attrib_annotation-sys-attrib $-1 -1 $72 $-1 $45 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $15 #
+-61 coedge $73 -1 -1 $-1 $74 $45 $-1 $75 forward $26 $-1 #
+-62 coedge $76 -1 -1 $-1 $45 $74 $-1 $77 forward $26 $-1 #
+-63 edge $78 -1 -1 $-1 $79 1 $80 0 $45 $81 forward @7 unknown F #
+-64 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $74 #
+-65 copy_annotation-annotation $-1 -1 hooked $31 $82 #
+-66 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $75 #
+-67 copy_annotation-annotation $-1 -1 hooked $33 $83 #
+-68 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $77 #
+-69 copy_annotation-annotation $-1 -1 hooked $37 $84 #
+-70 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $79 #
+-71 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $80 #
+-72 tag-sys-attrib $-1 -1 $-1 $60 $45 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $45 #
+-73 attrib_annotation-sys-attrib $-1 -1 $85 $-1 $61 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $29 #
+-74 coedge $86 -1 -1 $-1 $62 $61 $-1 $87 forward $26 $-1 #
+-75 edge $88 -1 -1 $-1 $80 1 $89 0 $61 $90 forward @7 unknown F #
+-76 attrib_annotation-sys-attrib $-1 -1 $91 $-1 $62 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $35 #
+-77 edge $92 -1 -1 $-1 $93 1 $79 0 $62 $94 forward @7 unknown F #
+-78 attrib_annotation-sys-attrib $-1 -1 $95 $-1 $63 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $39 #
+-79 vertex $96 -1 -1 $-1 $63 $97 #
+-80 vertex $98 -1 -1 $-1 $63 $99 #
+-81 straight-curve $-1 -1 -1 $-1 1 1.5 0.1339745962155614 5.5511151231257839e-17 0.50000000000000011 -0.86602540378443871 I I #
+-82 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $87 #
+-83 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $89 #
+-84 tag-sys-attrib $-1 -1 $-1 $-1 $-1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $93 #
+-85 tag-sys-attrib $-1 -1 $-1 $73 $61 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $61 #
+-86 attrib_annotation-sys-attrib $-1 -1 $100 $-1 $74 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $47 #
+-87 edge $101 -1 -1 $-1 $89 1 $93 0 $74 $102 forward @7 unknown F #
+-88 attrib_annotation-sys-attrib $-1 -1 $103 $-1 $75 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $50 #
+-89 vertex $104 -1 -1 $-1 $75 $105 #
+-90 ellipse-curve $-1 -1 -1 $-1 0.2928932188134527 3.5533554413208472 -2.0083277917770643 0.70710678118654746 0.61237243569579447 0.35355339059327373 0.70710678118654768 -0.053355441320847241 -1.3217992271451284 1 I I #
+-91 tag-sys-attrib $-1 -1 $-1 $76 $62 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $62 #
+-92 attrib_annotation-sys-attrib $-1 -1 $106 $-1 $77 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $54 #
+-93 vertex $107 -1 -1 $-1 $87 $108 #
+-94 ellipse-curve $-1 -1 -1 $-1 0.29289321881345259 2.6713894300707421 -0.48071784974301934 0.70710678118654746 0.61237243569579447 0.35355339059327373 -0.70710678118654746 0.053355441320846797 1.3217992271451282 1 I I #
+-95 tag-sys-attrib $-1 -1 $-1 $78 $63 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $63 #
+-96 attrib_annotation-sys-attrib $-1 -1 $109 $-1 $79 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $58 #
+-97 point $-1 -1 -1 $-1 1 1.5 0.1339745962155614 #
+-98 attrib_annotation-sys-attrib $-1 -1 $110 $-1 $80 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $59 #
+-99 point $-1 -1 -1 $-1 1.0000000000000002 3.5 -3.3301270189221928 #
+-100 tag-sys-attrib $-1 -1 $-1 $86 $74 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $74 #
+-101 attrib_annotation-sys-attrib $-1 -1 $111 $-1 $87 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $65 #
+-102 straight-curve $-1 -1 -1 $-1 -0.4142135623730947 4.7247448713915894 -2.6230202377356453 -5.5511151231257827e-17 -0.50000000000000011 0.8660254037844386 I I #
+-103 tag-sys-attrib $-1 -1 $-1 $88 $75 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $75 #
+-104 attrib_annotation-sys-attrib $-1 -1 $112 $-1 $89 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $67 #
+-105 point $-1 -1 -1 $-1 -0.41421356237309448 4.7247448713915894 -2.6230202377356457 #
+-106 tag-sys-attrib $-1 -1 $-1 $92 $77 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $77 #
+-107 attrib_annotation-sys-attrib $-1 -1 $113 $-1 $93 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 $69 #
+-108 point $-1 -1 -1 $-1 -0.41421356237309492 2.7247448713915889 0.84108137740210887 #
+-109 tag-sys-attrib $-1 -1 $-1 $96 $79 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $79 #
+-110 tag-sys-attrib $-1 -1 $-1 $98 $80 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $80 #
+-111 tag-sys-attrib $-1 -1 $-1 $101 $87 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $87 #
+-112 tag-sys-attrib $-1 -1 $-1 $104 $89 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $89 #
+-113 tag-sys-attrib $-1 -1 $-1 $107 $93 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 origin_live $93 #
+End-of-ACIS-data 

@@ -1,0 +1,45 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_BS3_CRV_ERRMOD_INCLUDED
+#define SPAACISDS_BS3_CRV_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_bs3_crv_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_bs3_crv_errmod;
+
+#endif
+#define FIT_NO_SPAN spaacisds_bs3_crv_errmod.message_code(0)
+#define CUR_FIT_NO_KNOT_SPAN spaacisds_bs3_crv_errmod.message_code(1)
+#define NO_BSPLINE spaacisds_bs3_crv_errmod.message_code(2)
+#define NO_CURVE_PERP spaacisds_bs3_crv_errmod.message_code(3)
+#define BS3_NULL_CURVE_EVAL spaacisds_bs3_crv_errmod.message_code(4)
+#define SPAN_EVAL spaacisds_bs3_crv_errmod.message_code(5)
+#define UNKNOWN_BS_CURVE spaacisds_bs3_crv_errmod.message_code(6)
+#define CUR_UNKNOWN_BS_FORM spaacisds_bs3_crv_errmod.message_code(7)
+#define BAD_SPLINE_OFFSET spaacisds_bs3_crv_errmod.message_code(8)
+#define BAD_BS_MULT spaacisds_bs3_crv_errmod.message_code(9)
+#define BAD_BEZIER_SPAN spaacisds_bs3_crv_errmod.message_code(10)
+#define BS3_INCORRECT_DIMENSION spaacisds_bs3_crv_errmod.message_code(11)
+#define COIN_ERROR spaacisds_bs3_crv_errmod.message_code(12)
+#define COIN_ZERO_SPAN spaacisds_bs3_crv_errmod.message_code(13)
+#define BAD_SPLINE_P_FIRST_LAST spaacisds_bs3_crv_errmod.message_code(14)
+#define BAD_SPLINE_P_NPTS spaacisds_bs3_crv_errmod.message_code(15)
+#define BAD_SPLINE_P_KNOT_ORDER spaacisds_bs3_crv_errmod.message_code(16)
+#define BS3_CURVE_LENGTH_ERROR spaacisds_bs3_crv_errmod.message_code(17)
+#define BS3_CURVE_SELF_INT_ERRROR spaacisds_bs3_crv_errmod.message_code(18)
+#define BS3_CURVE_ALIGN_NO_CURVES spaacisds_bs3_crv_errmod.message_code(19)
+#define DEGREE_OF_CURVE_IS_TOO_LARGE spaacisds_bs3_crv_errmod.message_code(20)
+#define BS3_PARABOLA_COIN_PTS spaacisds_bs3_crv_errmod.message_code(21)
+#define BS3_PARABOLA_NON_PLANAR_PTS spaacisds_bs3_crv_errmod.message_code(22)
+#define BS3_PARABOLA_INCONSISTENT_PTS spaacisds_bs3_crv_errmod.message_code(23)
+#define BS3_SNAP_PARAM_OUT_OF_RANGE spaacisds_bs3_crv_errmod.message_code(24)
+#define BS3_SNAP_PARAM_TOO_CLOSE spaacisds_bs3_crv_errmod.message_code(25)
+#define BS3_SNAP_PTS_TOO_CLOSE spaacisds_bs3_crv_errmod.message_code(26)
+
+#endif /* SPAACISDS_BS3_CRV_ERRMOD_INCLUDED */

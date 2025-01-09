@@ -1,0 +1,21 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_OFFSET_API_ERRMOD_INCLUDED
+#define SPAACISDS_OFFSET_API_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_offset_api_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_offset_api_errmod;
+
+#endif
+#define OFFSET_EDGE_MAKE_INPUT_FAILED spaacisds_offset_api_errmod.message_code(0)
+#define INVALID_OFFSET_EDGES_INPUT_HANDLE spaacisds_offset_api_errmod.message_code(1)
+#define INVALID_OFFSET_EDGES_OPTIONS spaacisds_offset_api_errmod.message_code(2)
+
+#endif /* SPAACISDS_OFFSET_API_ERRMOD_INCLUDED */

@@ -1,0 +1,19 @@
+// Error code definitions for module "spaacisds/src"
+
+#ifndef SPAACISDS_CCS_ERRMOD_INCLUDED
+#define SPAACISDS_CCS_ERRMOD_INCLUDED
+
+#include "errorbase.hxx"
+#include "errmsg.hxx"
+
+#include "importexport.h"
+#ifdef __SPAAcisDs
+extern EXPORT_SYMBOL message_module spaacisds_ccs_errmod;
+
+#else
+extern IMPORT_SYMBOL message_module spaacisds_ccs_errmod;
+
+#endif
+#define CURVE_LEN_ZERO spaacisds_ccs_errmod.message_code(0)
+
+#endif /* SPAACISDS_CCS_ERRMOD_INCLUDED */
